@@ -33,10 +33,10 @@ namespace Otomasyon_V0.Forms
             this.grdControlDepartmentList = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.grpControlDepartmentList = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnDeleted = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnList = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -66,10 +66,10 @@ namespace Otomasyon_V0.Forms
             // 
             // grpControlDepartmentList
             // 
-            this.grpControlDepartmentList.Controls.Add(this.simpleButton4);
-            this.grpControlDepartmentList.Controls.Add(this.simpleButton3);
-            this.grpControlDepartmentList.Controls.Add(this.simpleButton2);
-            this.grpControlDepartmentList.Controls.Add(this.simpleButton1);
+            this.grpControlDepartmentList.Controls.Add(this.BtnUpdate);
+            this.grpControlDepartmentList.Controls.Add(this.BtnDeleted);
+            this.grpControlDepartmentList.Controls.Add(this.BtnAdd);
+            this.grpControlDepartmentList.Controls.Add(this.BtnList);
             this.grpControlDepartmentList.Controls.Add(this.textEdit2);
             this.grpControlDepartmentList.Controls.Add(this.textEdit1);
             this.grpControlDepartmentList.Controls.Add(this.labelControl2);
@@ -79,41 +79,42 @@ namespace Otomasyon_V0.Forms
             this.grpControlDepartmentList.Size = new System.Drawing.Size(255, 500);
             this.grpControlDepartmentList.TabIndex = 5;
             // 
-            // simpleButton4
+            // BtnUpdate
             // 
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(74, 319);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(150, 40);
-            this.simpleButton4.TabIndex = 7;
-            this.simpleButton4.Text = "Güncelle";
+            this.BtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.BtnUpdate.Location = new System.Drawing.Point(74, 319);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(150, 40);
+            this.BtnUpdate.TabIndex = 7;
+            this.BtnUpdate.Text = "Güncelle";
             // 
-            // simpleButton3
+            // BtnDeleted
             // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(74, 260);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(150, 40);
-            this.simpleButton3.TabIndex = 6;
-            this.simpleButton3.Text = "Sil";
+            this.BtnDeleted.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.BtnDeleted.Location = new System.Drawing.Point(74, 260);
+            this.BtnDeleted.Name = "BtnDeleted";
+            this.BtnDeleted.Size = new System.Drawing.Size(150, 40);
+            this.BtnDeleted.TabIndex = 6;
+            this.BtnDeleted.Text = "Sil";
             // 
-            // simpleButton2
+            // BtnAdd
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(74, 201);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(150, 40);
-            this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "Ekle";
+            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.BtnAdd.Location = new System.Drawing.Point(74, 201);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(150, 40);
+            this.BtnAdd.TabIndex = 5;
+            this.BtnAdd.Text = "Ekle";
             // 
-            // simpleButton1
+            // BtnList
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(74, 146);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(150, 40);
-            this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Text = "Listele";
+            this.BtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnList.Location = new System.Drawing.Point(74, 146);
+            this.BtnList.Name = "BtnList";
+            this.BtnList.Size = new System.Drawing.Size(150, 40);
+            this.BtnList.TabIndex = 4;
+            this.BtnList.Text = "Listele";
+            this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
             // textEdit2
             // 
@@ -175,10 +176,10 @@ namespace Otomasyon_V0.Forms
         private DevExpress.XtraGrid.GridControl grdControlDepartmentList;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl grpControlDepartmentList;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton BtnUpdate;
+        private DevExpress.XtraEditors.SimpleButton BtnDeleted;
+        private DevExpress.XtraEditors.SimpleButton BtnAdd;
+        private DevExpress.XtraEditors.SimpleButton BtnList;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
