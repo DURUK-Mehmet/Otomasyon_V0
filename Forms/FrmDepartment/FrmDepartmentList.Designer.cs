@@ -37,16 +37,16 @@ namespace Otomasyon_V0.Forms
             this.BtnDeleted = new DevExpress.XtraEditors.SimpleButton();
             this.BtnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.BtnList = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtAd = new DevExpress.XtraEditors.TextEdit();
+            this.TxtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.grdControlDepartmentList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpControlDepartmentList)).BeginInit();
             this.grpControlDepartmentList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // grdControlDepartmentList
@@ -70,8 +70,8 @@ namespace Otomasyon_V0.Forms
             this.grpControlDepartmentList.Controls.Add(this.BtnDeleted);
             this.grpControlDepartmentList.Controls.Add(this.BtnAdd);
             this.grpControlDepartmentList.Controls.Add(this.BtnList);
-            this.grpControlDepartmentList.Controls.Add(this.textEdit2);
-            this.grpControlDepartmentList.Controls.Add(this.textEdit1);
+            this.grpControlDepartmentList.Controls.Add(this.TxtAd);
+            this.grpControlDepartmentList.Controls.Add(this.TxtID);
             this.grpControlDepartmentList.Controls.Add(this.labelControl2);
             this.grpControlDepartmentList.Controls.Add(this.labelControl1);
             this.grpControlDepartmentList.Location = new System.Drawing.Point(1007, 12);
@@ -81,7 +81,7 @@ namespace Otomasyon_V0.Forms
             // 
             // BtnUpdate
             // 
-            this.BtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.BtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnUpdate.ImageOptions.Image")));
             this.BtnUpdate.Location = new System.Drawing.Point(74, 319);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(150, 40);
@@ -90,7 +90,7 @@ namespace Otomasyon_V0.Forms
             // 
             // BtnDeleted
             // 
-            this.BtnDeleted.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.BtnDeleted.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnDeleted.ImageOptions.Image")));
             this.BtnDeleted.Location = new System.Drawing.Point(74, 260);
             this.BtnDeleted.Name = "BtnDeleted";
             this.BtnDeleted.Size = new System.Drawing.Size(150, 40);
@@ -99,16 +99,17 @@ namespace Otomasyon_V0.Forms
             // 
             // BtnAdd
             // 
-            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.Image")));
             this.BtnAdd.Location = new System.Drawing.Point(74, 201);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(150, 40);
             this.BtnAdd.TabIndex = 5;
             this.BtnAdd.Text = "Ekle";
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnList
             // 
-            this.BtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnList.ImageOptions.Image")));
             this.BtnList.Location = new System.Drawing.Point(74, 146);
             this.BtnList.Name = "BtnList";
             this.BtnList.Size = new System.Drawing.Size(150, 40);
@@ -116,20 +117,20 @@ namespace Otomasyon_V0.Forms
             this.BtnList.Text = "Listele";
             this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
-            // textEdit2
+            // TxtAd
             // 
-            this.textEdit2.Location = new System.Drawing.Point(74, 103);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(150, 20);
-            this.textEdit2.TabIndex = 3;
+            this.TxtAd.Location = new System.Drawing.Point(74, 103);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Size = new System.Drawing.Size(150, 20);
+            this.TxtAd.TabIndex = 3;
             // 
-            // textEdit1
+            // TxtID
             // 
-            this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(74, 55);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(150, 20);
-            this.textEdit1.TabIndex = 2;
+            this.TxtID.Enabled = false;
+            this.TxtID.Location = new System.Drawing.Point(74, 55);
+            this.TxtID.Name = "TxtID";
+            this.TxtID.Size = new System.Drawing.Size(150, 20);
+            this.TxtID.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -165,8 +166,8 @@ namespace Otomasyon_V0.Forms
             ((System.ComponentModel.ISupportInitialize)(this.grpControlDepartmentList)).EndInit();
             this.grpControlDepartmentList.ResumeLayout(false);
             this.grpControlDepartmentList.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,8 +181,8 @@ namespace Otomasyon_V0.Forms
         private DevExpress.XtraEditors.SimpleButton BtnDeleted;
         private DevExpress.XtraEditors.SimpleButton BtnAdd;
         private DevExpress.XtraEditors.SimpleButton BtnList;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtAd;
+        private DevExpress.XtraEditors.TextEdit TxtID;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
     }

@@ -103,28 +103,28 @@
     <Compile Include="DBEntity\TblPersonel.cs">
       <DependentUpon>DB_Entity1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmCompaniesList.cs">
+    <Compile Include="Forms\FrmCompanies\FrmCompaniesList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmCompaniesList.Designer.cs">
+    <Compile Include="Forms\FrmCompanies\FrmCompaniesList.Designer.cs">
       <DependentUpon>FrmCompaniesList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmDepartmentList.cs">
+    <Compile Include="Forms\FrmDepartment\FrmDepartmentList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmDepartmentList.Designer.cs">
+    <Compile Include="Forms\FrmDepartment\FrmDepartmentList.Designer.cs">
       <DependentUpon>FrmDepartmentList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmEmployeeList.cs">
+    <Compile Include="Forms\FrmEmployee\FrmEmployeeList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmEmployeeList.Designer.cs">
+    <Compile Include="Forms\FrmEmployee\FrmEmployeeList.Designer.cs">
       <DependentUpon>FrmEmployeeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmTasksList.cs">
+    <Compile Include="Forms\FrmTasks\FrmTasksList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmTasksList.Designer.cs">
+    <Compile Include="Forms\FrmTasks\FrmTasksList.Designer.cs">
       <DependentUpon>FrmTasksList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -132,16 +132,16 @@
     <EmbeddedResource Include="Beginpage.resx">
       <DependentUpon>Beginpage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmCompaniesList.resx">
+    <EmbeddedResource Include="Forms\FrmCompanies\FrmCompaniesList.resx">
       <DependentUpon>FrmCompaniesList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmDepartmentList.resx">
+    <EmbeddedResource Include="Forms\FrmDepartment\FrmDepartmentList.resx">
       <DependentUpon>FrmDepartmentList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmEmployeeList.resx">
+    <EmbeddedResource Include="Forms\FrmEmployee\FrmEmployeeList.resx">
       <DependentUpon>FrmEmployeeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmTasksList.resx">
+    <EmbeddedResource Include="Forms\FrmTasks\FrmTasksList.resx">
       <DependentUpon>FrmTasksList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -189,6 +189,10 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\FrmReport\" />
+    <Folder Include="Forms\FrmTools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

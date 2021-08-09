@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using Otomasyon_V0.DBEntity;
 
 namespace Otomasyon_V0.Forms
@@ -35,6 +36,16 @@ namespace Otomasyon_V0.Forms
         private void BtnList_Click(object sender, EventArgs e)
         {
             List();
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            TblDepartman tblDepartman = new TblDepartman();
+            tblDepartman.Ad = TxtAd.Text;
+            isTakipOtomasyonEntities.TblDepartman.Add(tblDepartman);
+            isTakipOtomasyonEntities.SaveChanges();
+            List();
+            XtraMessageBox.Show("Departman Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }

@@ -67,7 +67,7 @@ namespace Otomasyon_V0.Forms
             this.Controls.Add(this.grpControlCompainesList);
             this.Controls.Add(this.grdControlCompaniesList);
             this.Name = "FrmCompaniesList";
-            this.Text = "Görevler Listesi";
+            this.Text = "Firmalar Listesi";
             ((System.ComponentModel.ISupportInitialize)(this.grdControlCompaniesList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpControlCompainesList)).EndInit();
