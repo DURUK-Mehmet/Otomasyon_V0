@@ -63,6 +63,7 @@ namespace Otomasyon_V0.Forms
             // 
             this.gridView1.GridControl = this.grdControlDepartmentList;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // grpControlDepartmentList
             // 
@@ -96,6 +97,7 @@ namespace Otomasyon_V0.Forms
             this.BtnDeleted.Size = new System.Drawing.Size(150, 40);
             this.BtnDeleted.TabIndex = 6;
             this.BtnDeleted.Text = "Sil";
+            this.BtnDeleted.Click += new System.EventHandler(this.BtnDeleted_Click);
             // 
             // BtnAdd
             // 

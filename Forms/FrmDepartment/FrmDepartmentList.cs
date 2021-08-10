@@ -21,7 +21,8 @@ namespace Otomasyon_V0.Forms
         }
 
         isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
-        
+
+        TblDepartman tblDepartman = new TblDepartman();
         void List()
         {
             var veriables = (from x in isTakipOtomasyonEntities.TblDepartman
@@ -46,6 +47,22 @@ namespace Otomasyon_V0.Forms
             isTakipOtomasyonEntities.SaveChanges();
             List();
             XtraMessageBox.Show("Departman Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void BtnDeleted_Click(object sender, EventArgs e)
+        {
+            int find = int.Parse(TxtID.Text);
+            var value = isTakipOtomasyonEntities.TblDepartman.Find(find);
+            isTakipOtomasyonEntities.TblDepartman.Remove(value);
+            isTakipOtomasyonEntities.SaveChanges();
+            List();
+            XtraMessageBox.Show("Seçilen Departman Başarıyla Silindi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            TxtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            TxtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
         }
     }
 }

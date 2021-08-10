@@ -499,7 +499,7 @@ namespace Otomasyon_V0
             this.IsMdiContainer = true;
             this.Name = "Beginpage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Duruk Otomasyon_V0";
+            this.Text = "Otomasyon_V0";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
