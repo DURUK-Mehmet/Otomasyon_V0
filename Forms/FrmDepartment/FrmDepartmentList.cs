@@ -64,5 +64,16 @@ namespace Otomasyon_V0.Forms
             TxtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
             TxtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
         }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            int find = int.Parse(TxtID.Text);
+            var value = isTakipOtomasyonEntities.TblDepartman.Find(find);
+            value.Ad = TxtAd.Text;
+            isTakipOtomasyonEntities.SaveChanges();
+            List();
+            XtraMessageBox.Show("Güncelleme İşlemi Başarıyla Gerçekleşti","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
     }
 }
