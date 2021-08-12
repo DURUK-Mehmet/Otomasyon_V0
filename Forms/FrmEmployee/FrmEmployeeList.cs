@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Otomasyon_V0.DBEntity;
+using Otomasyon_V0.Forms;
 
 namespace Otomasyon_V0.Forms
 {
@@ -15,6 +17,29 @@ namespace Otomasyon_V0.Forms
         public FrmEmployeeList()
         {
             InitializeComponent();
+            List();
+        }
+        isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
+
+        TblPersonel tblPersonel = new TblPersonel();
+
+        void List()
+        {
+            var values = from x in isTakipOtomasyonEntities.TblPersonel
+                         select new
+                         {
+                             x.ID,
+                             x.Ad,
+                             x.Soyad,
+                             x.Mail,
+                             x.Departman,
+                         };
+            grdControlEmployeeList.DataSource = values.ToList();
+        }
+
+        private void BtnList_Click(object sender, EventArgs e)
+        {
+            List();
         }
     }
 }

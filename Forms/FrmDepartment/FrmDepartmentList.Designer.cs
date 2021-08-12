@@ -63,6 +63,7 @@ namespace Otomasyon_V0.Forms
             // 
             this.gridView1.GridControl = this.grdControlDepartmentList;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // grpControlDepartmentList
@@ -141,9 +142,9 @@ namespace Otomasyon_V0.Forms
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(5, 100);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(22, 23);
+            this.labelControl2.Size = new System.Drawing.Size(29, 23);
             this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Ad";
+            this.labelControl2.Text = "Ad:";
             // 
             // labelControl1
             // 
@@ -151,9 +152,9 @@ namespace Otomasyon_V0.Forms
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(5, 52);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(20, 23);
+            this.labelControl1.Size = new System.Drawing.Size(27, 23);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "ID";
+            this.labelControl1.Text = "ID:";
             // 
             // FrmDepartmentList
             // 

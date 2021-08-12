@@ -51,6 +51,7 @@ namespace Otomasyon_V0.Forms
             // 
             this.gridView1.GridControl = this.grdControlTasksList;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // grpControlTasksList
             // 
