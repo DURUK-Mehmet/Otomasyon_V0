@@ -26,10 +26,9 @@ namespace Otomasyon_V0.DBEntity
         public string Soyad { get; set; }
         public string Mail { get; set; }
         public string Telefon { get; set; }
-        public string Adres { get; set; }
         public Nullable<int> Departman { get; set; }
-        public string Maas { get; set; }
         public string Gorsel { get; set; }
+        public Nullable<bool> Durum { get; set; }
     
         public virtual TblDepartman TblDepartman { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

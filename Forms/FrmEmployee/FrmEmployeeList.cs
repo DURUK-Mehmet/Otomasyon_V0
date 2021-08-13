@@ -65,5 +65,13 @@ namespace Otomasyon_V0.Forms
             XtraMessageBox.Show("Yeni Personel Başarıyla Eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
             List();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            TxtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            TxtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            TxtSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
+            TxtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+        }
     }
 }

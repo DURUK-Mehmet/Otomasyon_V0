@@ -15,6 +15,7 @@
         <AssociationConnector Association="isTakipOtomasyonModel.FK_TblGorev_TblPersonel" ManuallyRouted="false" />
         <AssociationConnector Association="isTakipOtomasyonModel.FK_TblGorev_TblPersonel1" ManuallyRouted="false" />
         <AssociationConnector Association="isTakipOtomasyonModel.FK_TblGorevDetay_TblGorev" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="isTakipOtomasyonModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

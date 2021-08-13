@@ -4,7 +4,17 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="isTakipOtomasyonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="isTakipOtomasyonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
         <EntityType Name="TblAdmin">
           <Key>
             <PropertyRef Name="ID" />
@@ -64,10 +74,9 @@
           <Property Name="Soyad" Type="nvarchar" MaxLength="30" />
           <Property Name="Mail" Type="nvarchar" MaxLength="50" />
           <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
-          <Property Name="Adres" Type="nvarchar" MaxLength="200" />
-          <Property Name="Departman" Type="int" />
-          <Property Name="Maas" Type="nvarchar" MaxLength="30" />
           <Property Name="Gorsel" Type="nvarchar" MaxLength="200" />
+          <Property Name="Departman" Type="int" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <Association Name="FK_TblGorev_TblPersonel">
           <End Role="TblPersonel" Type="Self.TblPersonel" Multiplicity="0..1" />
@@ -118,6 +127,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="isTakipOtomasyonModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblDepartman" EntityType="Self.TblDepartman" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblFirma" EntityType="Self.TblFirma" Schema="dbo" store:Type="Tables" />
@@ -141,8 +151,7 @@
             <End Role="TblPersonel" EntitySet="TblPersonel" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="isTakipOtomasyonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -210,13 +219,12 @@
           <Property Name="Soyad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Departman" Type="Int32" />
-          <Property Name="Maas" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Gorsel" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="TblDepartman" Relationship="Self.FK_TblPersonel_TblDepartman" FromRole="TblPersonel" ToRole="TblDepartman" />
           <NavigationProperty Name="TblGorev" Relationship="Self.FK_TblGorev_TblPersonel" FromRole="TblPersonel" ToRole="TblGorev" />
           <NavigationProperty Name="TblGorev1" Relationship="Self.FK_TblGorev_TblPersonel1" FromRole="TblPersonel" ToRole="TblGorev" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
         <Association Name="FK_TblPersonel_TblDepartman">
           <End Role="TblDepartman" Type="Self.TblDepartman" Multiplicity="0..1" />
@@ -289,7 +297,18 @@
             <End Role="TblGorev" EntitySet="TblGorev" />
             <End Role="TblGorevDetay" EntitySet="TblGorevDetay" />
           </AssociationSet>
+          <EntitySet Name="sysdiagrams" EntityType="isTakipOtomasyonModel.sysdiagrams" />
         </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -354,15 +373,25 @@
           <EntitySetMapping Name="TblPersonel">
             <EntityTypeMapping TypeName="isTakipOtomasyonModel.TblPersonel">
               <MappingFragment StoreEntitySet="TblPersonel">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />
                 <ScalarProperty Name="Mail" ColumnName="Mail" />
                 <ScalarProperty Name="Telefon" ColumnName="Telefon" />
-                <ScalarProperty Name="Adres" ColumnName="Adres" />
                 <ScalarProperty Name="Departman" ColumnName="Departman" />
-                <ScalarProperty Name="Maas" ColumnName="Maas" />
                 <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="isTakipOtomasyonModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

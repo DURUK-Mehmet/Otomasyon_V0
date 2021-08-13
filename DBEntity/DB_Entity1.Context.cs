@@ -31,5 +31,6 @@ namespace Otomasyon_V0.DBEntity
         public virtual DbSet<TblGorev> TblGorev { get; set; }
         public virtual DbSet<TblGorevDetay> TblGorevDetay { get; set; }
         public virtual DbSet<TblPersonel> TblPersonel { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

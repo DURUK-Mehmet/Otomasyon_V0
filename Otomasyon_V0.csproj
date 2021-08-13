@@ -85,6 +85,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_Entity1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DBEntity\sysdiagrams.cs">
+      <DependentUpon>DB_Entity1.tt</DependentUpon>
+    </Compile>
     <Compile Include="DBEntity\TblAdmin.cs">
       <DependentUpon>DB_Entity1.tt</DependentUpon>
     </Compile>
