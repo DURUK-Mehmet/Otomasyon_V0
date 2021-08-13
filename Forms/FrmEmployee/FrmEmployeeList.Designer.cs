@@ -33,7 +33,7 @@ namespace Otomasyon_V0.Forms
             this.grdControlEmployeeList = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.grpControlEmployeeList = new DevExpress.XtraEditors.GroupControl();
-            this.LkUpDepartment = new DevExpress.XtraEditors.LookUpEdit();
+            this.LkUpEmployee = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.TxtGorsel = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -53,7 +53,7 @@ namespace Otomasyon_V0.Forms
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpControlEmployeeList)).BeginInit();
             this.grpControlEmployeeList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LkUpDepartment.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpEmployee.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtGorsel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
@@ -79,7 +79,7 @@ namespace Otomasyon_V0.Forms
             // 
             // grpControlEmployeeList
             // 
-            this.grpControlEmployeeList.Controls.Add(this.LkUpDepartment);
+            this.grpControlEmployeeList.Controls.Add(this.LkUpEmployee);
             this.grpControlEmployeeList.Controls.Add(this.labelControl6);
             this.grpControlEmployeeList.Controls.Add(this.TxtGorsel);
             this.grpControlEmployeeList.Controls.Add(this.labelControl5);
@@ -100,14 +100,15 @@ namespace Otomasyon_V0.Forms
             this.grpControlEmployeeList.Size = new System.Drawing.Size(255, 500);
             this.grpControlEmployeeList.TabIndex = 1;
             // 
-            // LkUpDepartment
+            // LkUpEmployee
             // 
-            this.LkUpDepartment.Location = new System.Drawing.Point(95, 180);
-            this.LkUpDepartment.Name = "LkUpDepartment";
-            this.LkUpDepartment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.LkUpEmployee.EditValue = "";
+            this.LkUpEmployee.Location = new System.Drawing.Point(95, 180);
+            this.LkUpEmployee.Name = "LkUpEmployee";
+            this.LkUpEmployee.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LkUpDepartment.Size = new System.Drawing.Size(150, 20);
-            this.LkUpDepartment.TabIndex = 23;
+            this.LkUpEmployee.Size = new System.Drawing.Size(150, 20);
+            this.LkUpEmployee.TabIndex = 23;
             // 
             // labelControl6
             // 
@@ -256,7 +257,7 @@ namespace Otomasyon_V0.Forms
             ((System.ComponentModel.ISupportInitialize)(this.grpControlEmployeeList)).EndInit();
             this.grpControlEmployeeList.ResumeLayout(false);
             this.grpControlEmployeeList.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LkUpDepartment.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpEmployee.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtGorsel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
@@ -285,7 +286,7 @@ namespace Otomasyon_V0.Forms
         private DevExpress.XtraEditors.TextEdit TxtID;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LookUpEdit LkUpDepartment;
+        private DevExpress.XtraEditors.LookUpEdit LkUpEmployee;
         private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }

@@ -18,6 +18,16 @@ namespace Otomasyon_V0.Forms
         {
             InitializeComponent();
             List();
+
+            var value = (from x in isTakipOtomasyonEntities.TblDepartman
+                         select new
+                         {
+                             x.ID,
+                             x.Ad
+                         }).ToList();
+            LkUpEmployee.Properties.ValueMember = "ID";
+            LkUpEmployee.Properties.DisplayMember = "Ad";
+            LkUpEmployee.Properties.DataSource =value;
         }
         isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
 
