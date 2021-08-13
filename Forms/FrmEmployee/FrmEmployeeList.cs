@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using Otomasyon_V0.DBEntity;
 using Otomasyon_V0.Forms;
 
@@ -49,6 +50,19 @@ namespace Otomasyon_V0.Forms
 
         private void BtnList_Click(object sender, EventArgs e)
         {
+            List();
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            tblPersonel.Ad = TxtAd.Text;
+            tblPersonel.Soyad = TxtSoyad.Text;
+            tblPersonel.Mail = TxtMail.Text;
+            tblPersonel.Departman = int.Parse(LkUpEmployee.EditValue.ToString());
+            tblPersonel.Gorsel = TxtGorsel.Text;
+            isTakipOtomasyonEntities.TblPersonel.Add(tblPersonel);
+            isTakipOtomasyonEntities.SaveChanges();
+            XtraMessageBox.Show("Yeni Personel Başarıyla Eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
             List();
         }
     }

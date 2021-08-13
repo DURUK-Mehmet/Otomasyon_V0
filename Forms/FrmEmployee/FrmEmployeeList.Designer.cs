@@ -197,6 +197,7 @@ namespace Otomasyon_V0.Forms
             this.BtnAdd.Size = new System.Drawing.Size(150, 40);
             this.BtnAdd.TabIndex = 13;
             this.BtnAdd.Text = "Ekle";
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnList
             // 

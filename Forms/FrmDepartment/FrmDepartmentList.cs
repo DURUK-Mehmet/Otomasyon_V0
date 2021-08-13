@@ -23,6 +23,7 @@ namespace Otomasyon_V0.Forms
         isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
 
         TblDepartman tblDepartman = new TblDepartman();
+        
         void List()
         {
             var veriables = (from x in isTakipOtomasyonEntities.TblDepartman
@@ -41,7 +42,6 @@ namespace Otomasyon_V0.Forms
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            TblDepartman tblDepartman = new TblDepartman();
             tblDepartman.Ad = TxtAd.Text;
             isTakipOtomasyonEntities.TblDepartman.Add(tblDepartman);
             isTakipOtomasyonEntities.SaveChanges();
