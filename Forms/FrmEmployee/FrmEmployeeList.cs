@@ -43,7 +43,8 @@ namespace Otomasyon_V0.Forms
                              x.Ad,
                              x.Soyad,
                              x.Mail,
-                             x.Departman,
+                             Dprtmn=x.TblDepartman.Ad,
+                             x.Durum
                          };
             grdControlEmployeeList.DataSource = values.ToList();
         }
@@ -72,6 +73,16 @@ namespace Otomasyon_V0.Forms
             TxtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
             TxtSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
             TxtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+        }
+
+        private void BtnDeleted_Click(object sender, EventArgs e)
+        {
+            var find = int.Parse(TxtID.Text);
+            var value = isTakipOtomasyonEntities.TblPersonel.Find(find);
+            value.Durum = false;
+            isTakipOtomasyonEntities.SaveChanges();
+            XtraMessageBox.Show("Personel Silme İşlemi Başarıyla Tamamlanmıştır","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            List();
         }
     }
 }

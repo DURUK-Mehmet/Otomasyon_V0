@@ -189,6 +189,7 @@ namespace Otomasyon_V0.Forms
             this.BtnDeleted.Size = new System.Drawing.Size(150, 40);
             this.BtnDeleted.TabIndex = 14;
             this.BtnDeleted.Text = "Sil";
+            this.BtnDeleted.Click += new System.EventHandler(this.BtnDeleted_Click);
             // 
             // BtnAdd
             // 
