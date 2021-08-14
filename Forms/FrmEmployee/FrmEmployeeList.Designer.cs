@@ -180,6 +180,7 @@ namespace Otomasyon_V0.Forms
             this.BtnUpdate.Size = new System.Drawing.Size(150, 40);
             this.BtnUpdate.TabIndex = 15;
             this.BtnUpdate.Text = "Güncelle";
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnDeleted
             // 

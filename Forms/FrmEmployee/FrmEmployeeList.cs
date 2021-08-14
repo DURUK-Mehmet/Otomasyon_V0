@@ -63,7 +63,7 @@ namespace Otomasyon_V0.Forms
             tblPersonel.Gorsel = TxtGorsel.Text;
             isTakipOtomasyonEntities.TblPersonel.Add(tblPersonel);
             isTakipOtomasyonEntities.SaveChanges();
-            XtraMessageBox.Show("Yeni Personel Başarıyla Eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            XtraMessageBox.Show("Personel Ekleme İşlemi Başarıyla Tamamlanmıştır", "Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
             List();
         }
 
@@ -83,6 +83,20 @@ namespace Otomasyon_V0.Forms
             isTakipOtomasyonEntities.SaveChanges();
             XtraMessageBox.Show("Personel Silme İşlemi Başarıyla Tamamlanmıştır","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
             List();
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            var find = int.Parse(TxtID.Text);
+            var value = isTakipOtomasyonEntities.TblPersonel.Find(find);
+            value.Ad = TxtAd.Text;
+            value.Soyad = TxtSoyad.Text;
+            value.Mail = TxtMail.Text;
+            value.Gorsel = TxtGorsel.Text;
+            value.Departman = int.Parse(LkUpEmployee.EditValue.ToString());
+            isTakipOtomasyonEntities.SaveChanges();
+            List();
+            XtraMessageBox.Show("Personel Güncelleme İşlemi Başarıyla Tamamlanmıştır", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
