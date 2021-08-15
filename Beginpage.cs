@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Otomasyon_V0.Forms;
+using Otomasyon_V0.Forms.FrmEmployee;
 
 namespace Otomasyon_V0
 {
@@ -44,6 +45,13 @@ namespace Otomasyon_V0
             FrmTasksList frmTasksList = new FrmTasksList();
             frmTasksList.MdiParent = this;
             frmTasksList.Show();
+        }
+
+        private void BtnEmployeeStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmEmployeeStatistic frmEmployeeStatistic = new FrmEmployeeStatistic();
+            frmEmployeeStatistic.MdiParent = this;
+            frmEmployeeStatistic.Show();
         }
     }
 }

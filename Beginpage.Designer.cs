@@ -193,6 +193,7 @@ namespace Otomasyon_V0
             this.BtnEmployeeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnEmployeeStatistics.ImageOptions.Image")));
             this.BtnEmployeeStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnEmployeeStatistics.ImageOptions.LargeImage")));
             this.BtnEmployeeStatistics.Name = "BtnEmployeeStatistics";
+            this.BtnEmployeeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnEmployeeStatistics_ItemClick);
             // 
             // BtnEmployeeReport
             // 
