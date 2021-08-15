@@ -95,8 +95,8 @@ namespace Otomasyon_V0.Forms
             value.Gorsel = TxtGorsel.Text;
             value.Departman = int.Parse(LkUpEmployee.EditValue.ToString());
             isTakipOtomasyonEntities.SaveChanges();
-            List();
             XtraMessageBox.Show("Personel Güncelleme İşlemi Başarıyla Tamamlanmıştır", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            List();
         }
     }
 }
