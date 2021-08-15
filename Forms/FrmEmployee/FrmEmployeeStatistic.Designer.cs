@@ -113,160 +113,240 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             // 
             // panelControl1
             // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(110)))), ((int)(((byte)(166)))));
+            this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Location = new System.Drawing.Point(25, 10);
+            this.panelControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(210, 110);
             this.panelControl1.TabIndex = 0;
             // 
             // panelControl2
             // 
+            this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(64)))), ((int)(((byte)(1)))));
+            this.panelControl2.Appearance.Options.UseBackColor = true;
             this.panelControl2.Controls.Add(this.labelControl6);
             this.panelControl2.Location = new System.Drawing.Point(25, 135);
+            this.panelControl2.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl2.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(210, 110);
             this.panelControl2.TabIndex = 1;
             // 
             // panelControl3
             // 
+            this.panelControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(103)))), ((int)(((byte)(191)))));
+            this.panelControl3.Appearance.Options.UseBackColor = true;
             this.panelControl3.Controls.Add(this.labelControl11);
             this.panelControl3.Location = new System.Drawing.Point(25, 260);
+            this.panelControl3.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl3.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(210, 110);
             this.panelControl3.TabIndex = 1;
             // 
             // panelControl4
             // 
+            this.panelControl4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
+            this.panelControl4.Appearance.Options.UseBackColor = true;
             this.panelControl4.Controls.Add(this.labelControl16);
             this.panelControl4.Location = new System.Drawing.Point(25, 385);
+            this.panelControl4.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl4.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(210, 110);
             this.panelControl4.TabIndex = 1;
             // 
             // panelControl5
             // 
+            this.panelControl5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(159)))), ((int)(((byte)(191)))));
+            this.panelControl5.Appearance.Options.UseBackColor = true;
             this.panelControl5.Controls.Add(this.labelControl18);
             this.panelControl5.Location = new System.Drawing.Point(275, 385);
+            this.panelControl5.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl5.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl5.Name = "panelControl5";
             this.panelControl5.Size = new System.Drawing.Size(210, 110);
             this.panelControl5.TabIndex = 3;
             // 
             // panelControl6
             // 
+            this.panelControl6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(135)))), ((int)(((byte)(217)))));
+            this.panelControl6.Appearance.Options.UseBackColor = true;
             this.panelControl6.Controls.Add(this.labelControl12);
             this.panelControl6.Location = new System.Drawing.Point(275, 260);
+            this.panelControl6.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl6.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl6.Name = "panelControl6";
             this.panelControl6.Size = new System.Drawing.Size(210, 110);
             this.panelControl6.TabIndex = 4;
             // 
             // panelControl7
             // 
+            this.panelControl7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(191)))), ((int)(((byte)(4)))));
+            this.panelControl7.Appearance.Options.UseBackColor = true;
             this.panelControl7.Controls.Add(this.labelControl7);
             this.panelControl7.Location = new System.Drawing.Point(275, 135);
+            this.panelControl7.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl7.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl7.Name = "panelControl7";
             this.panelControl7.Size = new System.Drawing.Size(210, 110);
             this.panelControl7.TabIndex = 5;
             // 
             // panelControl8
             // 
+            this.panelControl8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(218)))), ((int)(((byte)(242)))));
+            this.panelControl8.Appearance.Options.UseBackColor = true;
             this.panelControl8.Controls.Add(this.labelControl2);
             this.panelControl8.Location = new System.Drawing.Point(275, 10);
+            this.panelControl8.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+            this.panelControl8.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl8.Name = "panelControl8";
             this.panelControl8.Size = new System.Drawing.Size(210, 110);
             this.panelControl8.TabIndex = 2;
             // 
             // panelControl9
             // 
+            this.panelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(140)))), ((int)(((byte)(109)))));
+            this.panelControl9.Appearance.Options.UseBackColor = true;
             this.panelControl9.Controls.Add(this.labelControl19);
             this.panelControl9.Location = new System.Drawing.Point(525, 385);
+            this.panelControl9.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl9.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl9.Name = "panelControl9";
             this.panelControl9.Size = new System.Drawing.Size(210, 110);
             this.panelControl9.TabIndex = 7;
             // 
             // panelControl10
             // 
+            this.panelControl10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(166)))), ((int)(((byte)(23)))));
+            this.panelControl10.Appearance.Options.UseBackColor = true;
             this.panelControl10.Controls.Add(this.labelControl13);
             this.panelControl10.Location = new System.Drawing.Point(525, 260);
+            this.panelControl10.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl10.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl10.Name = "panelControl10";
             this.panelControl10.Size = new System.Drawing.Size(210, 110);
             this.panelControl10.TabIndex = 8;
             // 
             // panelControl11
             // 
+            this.panelControl11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(115)))), ((int)(((byte)(2)))));
+            this.panelControl11.Appearance.Options.UseBackColor = true;
             this.panelControl11.Controls.Add(this.labelControl8);
             this.panelControl11.Location = new System.Drawing.Point(525, 135);
+            this.panelControl11.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl11.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl11.Name = "panelControl11";
             this.panelControl11.Size = new System.Drawing.Size(210, 110);
             this.panelControl11.TabIndex = 9;
             // 
             // panelControl12
             // 
+            this.panelControl12.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(226)))), ((int)(((byte)(5)))));
+            this.panelControl12.Appearance.Options.UseBackColor = true;
             this.panelControl12.Controls.Add(this.labelControl3);
             this.panelControl12.Location = new System.Drawing.Point(525, 10);
+            this.panelControl12.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl12.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl12.Name = "panelControl12";
             this.panelControl12.Size = new System.Drawing.Size(210, 110);
             this.panelControl12.TabIndex = 6;
             // 
             // panelControl13
             // 
+            this.panelControl13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.panelControl13.Appearance.Options.UseBackColor = true;
             this.panelControl13.Controls.Add(this.labelControl20);
             this.panelControl13.Location = new System.Drawing.Point(775, 385);
+            this.panelControl13.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl13.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl13.Name = "panelControl13";
             this.panelControl13.Size = new System.Drawing.Size(210, 110);
             this.panelControl13.TabIndex = 3;
             // 
             // panelControl14
             // 
+            this.panelControl14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(140)))), ((int)(((byte)(31)))));
+            this.panelControl14.Appearance.Options.UseBackColor = true;
             this.panelControl14.Controls.Add(this.labelControl14);
             this.panelControl14.Location = new System.Drawing.Point(775, 260);
+            this.panelControl14.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl14.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl14.Name = "panelControl14";
             this.panelControl14.Size = new System.Drawing.Size(210, 110);
             this.panelControl14.TabIndex = 4;
             // 
             // panelControl15
             // 
+            this.panelControl15.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(179)))), ((int)(((byte)(4)))));
+            this.panelControl15.Appearance.Options.UseBackColor = true;
             this.panelControl15.Controls.Add(this.labelControl9);
             this.panelControl15.Location = new System.Drawing.Point(775, 135);
+            this.panelControl15.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl15.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl15.Name = "panelControl15";
             this.panelControl15.Size = new System.Drawing.Size(210, 110);
             this.panelControl15.TabIndex = 5;
             // 
             // panelControl16
             // 
+            this.panelControl16.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(181)))), ((int)(((byte)(4)))));
+            this.panelControl16.Appearance.Options.UseBackColor = true;
             this.panelControl16.Controls.Add(this.labelControl4);
             this.panelControl16.Location = new System.Drawing.Point(775, 10);
+            this.panelControl16.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl16.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl16.Name = "panelControl16";
             this.panelControl16.Size = new System.Drawing.Size(210, 110);
             this.panelControl16.TabIndex = 2;
             // 
             // panelControl17
             // 
+            this.panelControl17.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(208)))), ((int)(((byte)(107)))));
+            this.panelControl17.Appearance.Options.UseBackColor = true;
             this.panelControl17.Controls.Add(this.labelControl21);
             this.panelControl17.Location = new System.Drawing.Point(1025, 385);
+            this.panelControl17.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl17.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl17.Name = "panelControl17";
             this.panelControl17.Size = new System.Drawing.Size(210, 110);
             this.panelControl17.TabIndex = 11;
             // 
             // panelControl18
             // 
+            this.panelControl18.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(110)))), ((int)(((byte)(47)))));
+            this.panelControl18.Appearance.Options.UseBackColor = true;
             this.panelControl18.Controls.Add(this.labelControl15);
             this.panelControl18.Location = new System.Drawing.Point(1025, 260);
+            this.panelControl18.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl18.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl18.Name = "panelControl18";
             this.panelControl18.Size = new System.Drawing.Size(210, 110);
             this.panelControl18.TabIndex = 12;
             // 
             // panelControl19
             // 
+            this.panelControl19.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(59)))), ((int)(((byte)(2)))));
+            this.panelControl19.Appearance.Options.UseBackColor = true;
             this.panelControl19.Controls.Add(this.labelControl10);
             this.panelControl19.Location = new System.Drawing.Point(1025, 135);
+            this.panelControl19.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl19.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl19.Name = "panelControl19";
             this.panelControl19.Size = new System.Drawing.Size(210, 110);
             this.panelControl19.TabIndex = 13;
             // 
             // panelControl20
             // 
+            this.panelControl20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(102)))), ((int)(((byte)(32)))));
+            this.panelControl20.Appearance.Options.UseBackColor = true;
             this.panelControl20.Controls.Add(this.labelControl5);
             this.panelControl20.Location = new System.Drawing.Point(1025, 10);
+            this.panelControl20.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.panelControl20.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl20.Name = "panelControl20";
             this.panelControl20.Size = new System.Drawing.Size(210, 110);
             this.panelControl20.TabIndex = 10;
