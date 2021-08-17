@@ -354,13 +354,13 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             // 
             this.LblLastTask.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblLastTask.Appearance.Options.UseFont = true;
-            this.LblLastTask.LineLocation = DevExpress.XtraEditors.LineLocation.Left;
+            this.LblLastTask.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.LblLastTask.LineVisible = true;
-            this.LblLastTask.Location = new System.Drawing.Point(0, 65);
+            this.LblLastTask.Location = new System.Drawing.Point(29, 65);
             this.LblLastTask.Name = "LblLastTask";
-            this.LblLastTask.Size = new System.Drawing.Size(206, 16);
+            this.LblLastTask.Size = new System.Drawing.Size(175, 16);
             this.LblLastTask.TabIndex = 20;
-            this.LblLastTask.Text = "00000000000000000000000000000";
+            this.LblLastTask.Text = "0000000000000000000000000";
             // 
             // labelControl8
             // 
@@ -554,7 +554,7 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             // 
             this.LblMonthEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblMonthEmployee.Appearance.Options.UseFont = true;
-            this.LblMonthEmployee.Location = new System.Drawing.Point(100, 65);
+            this.LblMonthEmployee.Location = new System.Drawing.Point(63, 65);
             this.LblMonthEmployee.Name = "LblMonthEmployee";
             this.LblMonthEmployee.Size = new System.Drawing.Size(15, 33);
             this.LblMonthEmployee.TabIndex = 18;

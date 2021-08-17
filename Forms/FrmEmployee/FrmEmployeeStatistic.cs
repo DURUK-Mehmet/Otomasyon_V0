@@ -22,6 +22,8 @@ namespace Otomasyon_V0.Forms.FrmEmployee
 
         isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
 
+        DateTime today = DateTime.Today;
+
         private void FrmEmployeeStatistic_Load(object sender, EventArgs e)
         {
             LblTotalDepartment.Text = isTakipOtomasyonEntities.TblDepartman.Count().ToString();
@@ -32,6 +34,10 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             LblLastTask.Text = isTakipOtomasyonEntities.TblGorev.OrderByDescending(x=>x.ID).Select(x=>x.Aciklama).FirstOrDefault();
             LblCityJob.Text = isTakipOtomasyonEntities.TblFirma.Select(x => x.İl).Distinct().Count().ToString();
             LblTotalSector.Text = isTakipOtomasyonEntities.TblFirma.Select(x => x.Alan).Distinct().Count().ToString();
+            LblNowJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Tarih == today).ToString();
+            var MonthEmployeeId= isTakipOtomasyonEntities.TblGorev.GroupBy(x => x.GorevAlan).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault();
+            LblMonthEmployee.Text = isTakipOtomasyonEntities.TblPersonel.Where(x => x.ID == MonthEmployeeId).Select(y => y.Ad+" "+y.Soyad).FirstOrDefault().ToString();
+
         }
     }
 }
