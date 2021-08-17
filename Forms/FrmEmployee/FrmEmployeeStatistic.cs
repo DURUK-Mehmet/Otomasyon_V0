@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,11 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             LblTotalDepartment.Text = isTakipOtomasyonEntities.TblDepartman.Count().ToString();
             LblTotalCompanie.Text = isTakipOtomasyonEntities.TblFirma.Count().ToString();
             LblTotalEmployee.Text = isTakipOtomasyonEntities.TblPersonel.Count().ToString();
-            
+            LblActiveJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Durum == "1").ToString();
+            LblPassiveJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Durum == "0").ToString();
+            LblLastTask.Text = isTakipOtomasyonEntities.TblGorev.OrderByDescending(x=>x.ID).Select(x=>x.Aciklama).FirstOrDefault();
+            LblCityJob.Text = isTakipOtomasyonEntities.TblFirma.Select(x => x.İl).Distinct().Count().ToString();
+            LblTotalSector.Text = isTakipOtomasyonEntities.TblFirma.Select(x => x.Alan).Distinct().Count().ToString();
         }
     }
 }

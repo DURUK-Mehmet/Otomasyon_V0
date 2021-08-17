@@ -30,50 +30,50 @@ namespace Otomasyon_V0.Forms.FrmEmployee
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalEmployee = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalCompanie = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.LblMonthDepartment = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalAuthorized = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalBranch = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalDepartment = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
+            this.LblNewEmployee = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl11 = new DevExpress.XtraEditors.PanelControl();
+            this.LblLastTask = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl12 = new DevExpress.XtraEditors.PanelControl();
+            this.LblActiveJob = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl14 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalStudent = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl15 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalSector = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl16 = new DevExpress.XtraEditors.PanelControl();
+            this.LblPassiveJob = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl18 = new DevExpress.XtraEditors.PanelControl();
+            this.LblCityJob = new DevExpress.XtraEditors.LabelControl();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl19 = new DevExpress.XtraEditors.PanelControl();
+            this.LblMonthEmployee = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl20 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalEmployee = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalDepartment = new DevExpress.XtraEditors.LabelControl();
-            this.LblActiveJob = new DevExpress.XtraEditors.LabelControl();
-            this.LblPassiveJob = new DevExpress.XtraEditors.LabelControl();
             this.LblNowJob = new DevExpress.XtraEditors.LabelControl();
-            this.LblMonthEmployee = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalSector = new DevExpress.XtraEditors.LabelControl();
-            this.LblLastTask = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalBranch = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalCompanie = new DevExpress.XtraEditors.LabelControl();
-            this.LblMonthDepartment = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalAuthorized = new DevExpress.XtraEditors.LabelControl();
-            this.LblNewEmployee = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalStudent = new DevExpress.XtraEditors.LabelControl();
-            this.LblCityJob = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -119,6 +119,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl1.Size = new System.Drawing.Size(210, 140);
             this.panelControl1.TabIndex = 0;
             // 
+            // LblTotalEmployee
+            // 
+            this.LblTotalEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalEmployee.Appearance.Options.UseFont = true;
+            this.LblTotalEmployee.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalEmployee.Name = "LblTotalEmployee";
+            this.LblTotalEmployee.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalEmployee.TabIndex = 2;
+            this.LblTotalEmployee.Text = "0";
+            // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -141,6 +151,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(210, 140);
             this.panelControl2.TabIndex = 1;
+            // 
+            // LblTotalCompanie
+            // 
+            this.LblTotalCompanie.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalCompanie.Appearance.Options.UseFont = true;
+            this.LblTotalCompanie.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalCompanie.Name = "LblTotalCompanie";
+            this.LblTotalCompanie.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalCompanie.TabIndex = 22;
+            this.LblTotalCompanie.Text = "0";
             // 
             // labelControl6
             // 
@@ -165,6 +185,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl3.Size = new System.Drawing.Size(210, 140);
             this.panelControl3.TabIndex = 1;
             // 
+            // LblMonthDepartment
+            // 
+            this.LblMonthDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblMonthDepartment.Appearance.Options.UseFont = true;
+            this.LblMonthDepartment.Location = new System.Drawing.Point(100, 65);
+            this.LblMonthDepartment.Name = "LblMonthDepartment";
+            this.LblMonthDepartment.Size = new System.Drawing.Size(15, 33);
+            this.LblMonthDepartment.TabIndex = 23;
+            this.LblMonthDepartment.Text = "0";
+            // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -187,6 +217,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl6.Name = "panelControl6";
             this.panelControl6.Size = new System.Drawing.Size(210, 140);
             this.panelControl6.TabIndex = 4;
+            // 
+            // LblTotalAuthorized
+            // 
+            this.LblTotalAuthorized.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalAuthorized.Appearance.Options.UseFont = true;
+            this.LblTotalAuthorized.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalAuthorized.Name = "LblTotalAuthorized";
+            this.LblTotalAuthorized.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalAuthorized.TabIndex = 24;
+            this.LblTotalAuthorized.Text = "0";
             // 
             // labelControl12
             // 
@@ -211,6 +251,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl7.Size = new System.Drawing.Size(210, 140);
             this.panelControl7.TabIndex = 5;
             // 
+            // LblTotalBranch
+            // 
+            this.LblTotalBranch.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalBranch.Appearance.Options.UseFont = true;
+            this.LblTotalBranch.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalBranch.Name = "LblTotalBranch";
+            this.LblTotalBranch.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalBranch.TabIndex = 21;
+            this.LblTotalBranch.Text = "0";
+            // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -233,6 +283,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl8.Name = "panelControl8";
             this.panelControl8.Size = new System.Drawing.Size(210, 140);
             this.panelControl8.TabIndex = 2;
+            // 
+            // LblTotalDepartment
+            // 
+            this.LblTotalDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalDepartment.Appearance.Options.UseFont = true;
+            this.LblTotalDepartment.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalDepartment.Name = "LblTotalDepartment";
+            this.LblTotalDepartment.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalDepartment.TabIndex = 14;
+            this.LblTotalDepartment.Text = "0";
             // 
             // labelControl2
             // 
@@ -257,6 +317,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl10.Size = new System.Drawing.Size(210, 140);
             this.panelControl10.TabIndex = 8;
             // 
+            // LblNewEmployee
+            // 
+            this.LblNewEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblNewEmployee.Appearance.Options.UseFont = true;
+            this.LblNewEmployee.Location = new System.Drawing.Point(100, 65);
+            this.LblNewEmployee.Name = "LblNewEmployee";
+            this.LblNewEmployee.Size = new System.Drawing.Size(15, 33);
+            this.LblNewEmployee.TabIndex = 25;
+            this.LblNewEmployee.Text = "0";
+            // 
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -279,6 +349,18 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl11.Name = "panelControl11";
             this.panelControl11.Size = new System.Drawing.Size(210, 140);
             this.panelControl11.TabIndex = 9;
+            // 
+            // LblLastTask
+            // 
+            this.LblLastTask.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblLastTask.Appearance.Options.UseFont = true;
+            this.LblLastTask.LineLocation = DevExpress.XtraEditors.LineLocation.Left;
+            this.LblLastTask.LineVisible = true;
+            this.LblLastTask.Location = new System.Drawing.Point(0, 65);
+            this.LblLastTask.Name = "LblLastTask";
+            this.LblLastTask.Size = new System.Drawing.Size(206, 16);
+            this.LblLastTask.TabIndex = 20;
+            this.LblLastTask.Text = "00000000000000000000000000000";
             // 
             // labelControl8
             // 
@@ -303,6 +385,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl12.Size = new System.Drawing.Size(210, 140);
             this.panelControl12.TabIndex = 6;
             // 
+            // LblActiveJob
+            // 
+            this.LblActiveJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblActiveJob.Appearance.Options.UseFont = true;
+            this.LblActiveJob.Location = new System.Drawing.Point(100, 65);
+            this.LblActiveJob.Name = "LblActiveJob";
+            this.LblActiveJob.Size = new System.Drawing.Size(15, 33);
+            this.LblActiveJob.TabIndex = 15;
+            this.LblActiveJob.Text = "0";
+            // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -325,6 +417,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl14.Name = "panelControl14";
             this.panelControl14.Size = new System.Drawing.Size(210, 140);
             this.panelControl14.TabIndex = 4;
+            // 
+            // LblTotalStudent
+            // 
+            this.LblTotalStudent.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalStudent.Appearance.Options.UseFont = true;
+            this.LblTotalStudent.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalStudent.Name = "LblTotalStudent";
+            this.LblTotalStudent.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalStudent.TabIndex = 26;
+            this.LblTotalStudent.Text = "0";
             // 
             // labelControl14
             // 
@@ -349,6 +451,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl15.Size = new System.Drawing.Size(210, 140);
             this.panelControl15.TabIndex = 5;
             // 
+            // LblTotalSector
+            // 
+            this.LblTotalSector.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalSector.Appearance.Options.UseFont = true;
+            this.LblTotalSector.Location = new System.Drawing.Point(100, 65);
+            this.LblTotalSector.Name = "LblTotalSector";
+            this.LblTotalSector.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalSector.TabIndex = 19;
+            this.LblTotalSector.Text = "0";
+            // 
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -371,6 +483,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl16.Name = "panelControl16";
             this.panelControl16.Size = new System.Drawing.Size(210, 140);
             this.panelControl16.TabIndex = 2;
+            // 
+            // LblPassiveJob
+            // 
+            this.LblPassiveJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblPassiveJob.Appearance.Options.UseFont = true;
+            this.LblPassiveJob.Location = new System.Drawing.Point(100, 65);
+            this.LblPassiveJob.Name = "LblPassiveJob";
+            this.LblPassiveJob.Size = new System.Drawing.Size(15, 33);
+            this.LblPassiveJob.TabIndex = 16;
+            this.LblPassiveJob.Text = "0";
             // 
             // labelControl4
             // 
@@ -395,6 +517,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl18.Size = new System.Drawing.Size(210, 140);
             this.panelControl18.TabIndex = 12;
             // 
+            // LblCityJob
+            // 
+            this.LblCityJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblCityJob.Appearance.Options.UseFont = true;
+            this.LblCityJob.Location = new System.Drawing.Point(100, 65);
+            this.LblCityJob.Name = "LblCityJob";
+            this.LblCityJob.Size = new System.Drawing.Size(15, 33);
+            this.LblCityJob.TabIndex = 27;
+            this.LblCityJob.Text = "0";
+            // 
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -417,6 +549,16 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl19.Name = "panelControl19";
             this.panelControl19.Size = new System.Drawing.Size(210, 140);
             this.panelControl19.TabIndex = 13;
+            // 
+            // LblMonthEmployee
+            // 
+            this.LblMonthEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblMonthEmployee.Appearance.Options.UseFont = true;
+            this.LblMonthEmployee.Location = new System.Drawing.Point(100, 65);
+            this.LblMonthEmployee.Name = "LblMonthEmployee";
+            this.LblMonthEmployee.Size = new System.Drawing.Size(15, 33);
+            this.LblMonthEmployee.TabIndex = 18;
+            this.LblMonthEmployee.Text = "0";
             // 
             // labelControl10
             // 
@@ -441,56 +583,6 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.panelControl20.Size = new System.Drawing.Size(210, 140);
             this.panelControl20.TabIndex = 10;
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(27, 15);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(166, 25);
-            this.labelControl5.TabIndex = 4;
-            this.labelControl5.Text = "Bugünkü İş Sayısı";
-            // 
-            // LblTotalEmployee
-            // 
-            this.LblTotalEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalEmployee.Appearance.Options.UseFont = true;
-            this.LblTotalEmployee.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalEmployee.Name = "LblTotalEmployee";
-            this.LblTotalEmployee.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalEmployee.TabIndex = 2;
-            this.LblTotalEmployee.Text = "0";
-            // 
-            // LblTotalDepartment
-            // 
-            this.LblTotalDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalDepartment.Appearance.Options.UseFont = true;
-            this.LblTotalDepartment.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalDepartment.Name = "LblTotalDepartment";
-            this.LblTotalDepartment.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalDepartment.TabIndex = 14;
-            this.LblTotalDepartment.Text = "0";
-            // 
-            // LblActiveJob
-            // 
-            this.LblActiveJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblActiveJob.Appearance.Options.UseFont = true;
-            this.LblActiveJob.Location = new System.Drawing.Point(100, 65);
-            this.LblActiveJob.Name = "LblActiveJob";
-            this.LblActiveJob.Size = new System.Drawing.Size(15, 33);
-            this.LblActiveJob.TabIndex = 15;
-            this.LblActiveJob.Text = "0";
-            // 
-            // LblPassiveJob
-            // 
-            this.LblPassiveJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblPassiveJob.Appearance.Options.UseFont = true;
-            this.LblPassiveJob.Location = new System.Drawing.Point(100, 65);
-            this.LblPassiveJob.Name = "LblPassiveJob";
-            this.LblPassiveJob.Size = new System.Drawing.Size(15, 33);
-            this.LblPassiveJob.TabIndex = 16;
-            this.LblPassiveJob.Text = "0";
-            // 
             // LblNowJob
             // 
             this.LblNowJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -501,105 +593,15 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.LblNowJob.TabIndex = 17;
             this.LblNowJob.Text = "0";
             // 
-            // LblMonthEmployee
+            // labelControl5
             // 
-            this.LblMonthEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblMonthEmployee.Appearance.Options.UseFont = true;
-            this.LblMonthEmployee.Location = new System.Drawing.Point(100, 65);
-            this.LblMonthEmployee.Name = "LblMonthEmployee";
-            this.LblMonthEmployee.Size = new System.Drawing.Size(15, 33);
-            this.LblMonthEmployee.TabIndex = 18;
-            this.LblMonthEmployee.Text = "0";
-            // 
-            // LblTotalSector
-            // 
-            this.LblTotalSector.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalSector.Appearance.Options.UseFont = true;
-            this.LblTotalSector.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalSector.Name = "LblTotalSector";
-            this.LblTotalSector.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalSector.TabIndex = 19;
-            this.LblTotalSector.Text = "0";
-            // 
-            // LblLastTask
-            // 
-            this.LblLastTask.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblLastTask.Appearance.Options.UseFont = true;
-            this.LblLastTask.Location = new System.Drawing.Point(100, 65);
-            this.LblLastTask.Name = "LblLastTask";
-            this.LblLastTask.Size = new System.Drawing.Size(15, 33);
-            this.LblLastTask.TabIndex = 20;
-            this.LblLastTask.Text = "0";
-            // 
-            // LblTotalBranch
-            // 
-            this.LblTotalBranch.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalBranch.Appearance.Options.UseFont = true;
-            this.LblTotalBranch.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalBranch.Name = "LblTotalBranch";
-            this.LblTotalBranch.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalBranch.TabIndex = 21;
-            this.LblTotalBranch.Text = "0";
-            // 
-            // LblTotalCompanie
-            // 
-            this.LblTotalCompanie.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalCompanie.Appearance.Options.UseFont = true;
-            this.LblTotalCompanie.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalCompanie.Name = "LblTotalCompanie";
-            this.LblTotalCompanie.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalCompanie.TabIndex = 22;
-            this.LblTotalCompanie.Text = "0";
-            // 
-            // LblMonthDepartment
-            // 
-            this.LblMonthDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblMonthDepartment.Appearance.Options.UseFont = true;
-            this.LblMonthDepartment.Location = new System.Drawing.Point(100, 65);
-            this.LblMonthDepartment.Name = "LblMonthDepartment";
-            this.LblMonthDepartment.Size = new System.Drawing.Size(15, 33);
-            this.LblMonthDepartment.TabIndex = 23;
-            this.LblMonthDepartment.Text = "0";
-            // 
-            // LblTotalAuthorized
-            // 
-            this.LblTotalAuthorized.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalAuthorized.Appearance.Options.UseFont = true;
-            this.LblTotalAuthorized.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalAuthorized.Name = "LblTotalAuthorized";
-            this.LblTotalAuthorized.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalAuthorized.TabIndex = 24;
-            this.LblTotalAuthorized.Text = "0";
-            // 
-            // LblNewEmployee
-            // 
-            this.LblNewEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblNewEmployee.Appearance.Options.UseFont = true;
-            this.LblNewEmployee.Location = new System.Drawing.Point(100, 65);
-            this.LblNewEmployee.Name = "LblNewEmployee";
-            this.LblNewEmployee.Size = new System.Drawing.Size(15, 33);
-            this.LblNewEmployee.TabIndex = 25;
-            this.LblNewEmployee.Text = "0";
-            // 
-            // LblTotalStudent
-            // 
-            this.LblTotalStudent.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalStudent.Appearance.Options.UseFont = true;
-            this.LblTotalStudent.Location = new System.Drawing.Point(100, 65);
-            this.LblTotalStudent.Name = "LblTotalStudent";
-            this.LblTotalStudent.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalStudent.TabIndex = 26;
-            this.LblTotalStudent.Text = "0";
-            // 
-            // LblCityJob
-            // 
-            this.LblCityJob.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblCityJob.Appearance.Options.UseFont = true;
-            this.LblCityJob.Location = new System.Drawing.Point(100, 65);
-            this.LblCityJob.Name = "LblCityJob";
-            this.LblCityJob.Size = new System.Drawing.Size(15, 33);
-            this.LblCityJob.TabIndex = 27;
-            this.LblCityJob.Text = "0";
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(27, 15);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(166, 25);
+            this.labelControl5.TabIndex = 4;
+            this.labelControl5.Text = "Bugünkü İş Sayısı";
             // 
             // FrmEmployeeStatistic
             // 
