@@ -189,7 +189,7 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             // 
             this.LblMonthDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblMonthDepartment.Appearance.Options.UseFont = true;
-            this.LblMonthDepartment.Location = new System.Drawing.Point(100, 65);
+            this.LblMonthDepartment.Location = new System.Drawing.Point(33, 65);
             this.LblMonthDepartment.Name = "LblMonthDepartment";
             this.LblMonthDepartment.Size = new System.Drawing.Size(15, 33);
             this.LblMonthDepartment.TabIndex = 23;
@@ -234,9 +234,9 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Location = new System.Drawing.Point(45, 15);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(131, 25);
+            this.labelControl12.Size = new System.Drawing.Size(114, 25);
             this.labelControl12.TabIndex = 11;
-            this.labelControl12.Text = "Toplam Yetkili";
+            this.labelControl12.Text = "Yetkili Sayısı";
             // 
             // panelControl7
             // 
@@ -321,7 +321,7 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             // 
             this.LblNewEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblNewEmployee.Appearance.Options.UseFont = true;
-            this.LblNewEmployee.Location = new System.Drawing.Point(100, 65);
+            this.LblNewEmployee.Location = new System.Drawing.Point(29, 65);
             this.LblNewEmployee.Name = "LblNewEmployee";
             this.LblNewEmployee.Size = new System.Drawing.Size(15, 33);
             this.LblNewEmployee.TabIndex = 25;
@@ -554,7 +554,7 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             // 
             this.LblMonthEmployee.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblMonthEmployee.Appearance.Options.UseFont = true;
-            this.LblMonthEmployee.Location = new System.Drawing.Point(63, 65);
+            this.LblMonthEmployee.Location = new System.Drawing.Point(40, 65);
             this.LblMonthEmployee.Name = "LblMonthEmployee";
             this.LblMonthEmployee.Size = new System.Drawing.Size(15, 33);
             this.LblMonthEmployee.TabIndex = 18;
