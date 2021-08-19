@@ -32,9 +32,9 @@ namespace Otomasyon_V0.Forms.FrmEmployee
             
             LblTotalEmployee.Text = isTakipOtomasyonEntities.TblPersonel.Count().ToString();
             
-            LblActiveJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Durum == "1").ToString();
+            LblActiveJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Durum == true).ToString();
             
-            LblPassiveJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Durum == "0").ToString();
+            LblPassiveJob.Text = isTakipOtomasyonEntities.TblGorev.Count(x => x.Durum == false).ToString();
             
             LblLastTask.Text = isTakipOtomasyonEntities.TblGorev.OrderByDescending(x=>x.ID).Select(x=>x.Aciklama).FirstOrDefault();
             
