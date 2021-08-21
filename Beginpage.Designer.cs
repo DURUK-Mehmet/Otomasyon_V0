@@ -34,11 +34,9 @@ namespace Otomasyon_V0
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.BtnHomePage = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDepartmentList = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnDepartmentAdd = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDepartmentStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDepartmentReport = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEmployeeList = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnEmployeeAdd = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEmployeeStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEmployeeReport = new DevExpress.XtraBars.BarButtonItem();
             this.BtnCompanyList = new DevExpress.XtraBars.BarButtonItem();
@@ -91,11 +89,9 @@ namespace Otomasyon_V0
             this.ribbonControl1.SearchEditItem,
             this.BtnHomePage,
             this.BtnDepartmentList,
-            this.BtnDepartmentAdd,
             this.BtnDepartmentStatistics,
             this.BtnDepartmentReport,
             this.BtnEmployeeList,
-            this.BtnEmployeeAdd,
             this.BtnEmployeeStatistics,
             this.BtnEmployeeReport,
             this.BtnCompanyList,
@@ -145,14 +141,6 @@ namespace Otomasyon_V0
             this.BtnDepartmentList.Name = "BtnDepartmentList";
             this.BtnDepartmentList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnDepartmentList_ItemClick);
             // 
-            // BtnDepartmentAdd
-            // 
-            this.BtnDepartmentAdd.Caption = "Departman Ekle";
-            this.BtnDepartmentAdd.Id = 4;
-            this.BtnDepartmentAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnDepartmentAdd.ImageOptions.Image")));
-            this.BtnDepartmentAdd.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnDepartmentAdd.ImageOptions.LargeImage")));
-            this.BtnDepartmentAdd.Name = "BtnDepartmentAdd";
-            // 
             // BtnDepartmentStatistics
             // 
             this.BtnDepartmentStatistics.Caption = "Departman İstatistikleri";
@@ -177,14 +165,6 @@ namespace Otomasyon_V0
             this.BtnEmployeeList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnEmployeeList.ImageOptions.LargeImage")));
             this.BtnEmployeeList.Name = "BtnEmployeeList";
             this.BtnEmployeeList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnEmployeeList_ItemClick);
-            // 
-            // BtnEmployeeAdd
-            // 
-            this.BtnEmployeeAdd.Caption = "Personel Ekle";
-            this.BtnEmployeeAdd.Id = 8;
-            this.BtnEmployeeAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnEmployeeAdd.ImageOptions.Image")));
-            this.BtnEmployeeAdd.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnEmployeeAdd.ImageOptions.LargeImage")));
-            this.BtnEmployeeAdd.Name = "BtnEmployeeAdd";
             // 
             // BtnEmployeeStatistics
             // 
@@ -285,6 +265,7 @@ namespace Otomasyon_V0
             this.BtnCalculator.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCalculator.ImageOptions.Image")));
             this.BtnCalculator.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnCalculator.ImageOptions.LargeImage")));
             this.BtnCalculator.Name = "BtnCalculator";
+            this.BtnCalculator.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCalculator_ItemClick);
             // 
             // BtnYoutube
             // 
@@ -293,6 +274,7 @@ namespace Otomasyon_V0
             this.BtnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnYoutube.ImageOptions.Image")));
             this.BtnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnYoutube.ImageOptions.LargeImage")));
             this.BtnYoutube.Name = "BtnYoutube";
+            this.BtnYoutube.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYoutube_ItemClick);
             // 
             // BtnNews
             // 
@@ -301,6 +283,7 @@ namespace Otomasyon_V0
             this.BtnNews.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnNews.ImageOptions.Image")));
             this.BtnNews.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnNews.ImageOptions.LargeImage")));
             this.BtnNews.Name = "BtnNews";
+            this.BtnNews.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnNews_ItemClick);
             // 
             // BtnFinance
             // 
@@ -309,6 +292,7 @@ namespace Otomasyon_V0
             this.BtnFinance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnFinance.ImageOptions.Image")));
             this.BtnFinance.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFinance.ImageOptions.LargeImage")));
             this.BtnFinance.Name = "BtnFinance";
+            this.BtnFinance.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFinance_ItemClick);
             // 
             // BtnMap
             // 
@@ -317,6 +301,7 @@ namespace Otomasyon_V0
             this.BtnMap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnMap.ImageOptions.Image")));
             this.BtnMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMap.ImageOptions.LargeImage")));
             this.BtnMap.Name = "BtnMap";
+            this.BtnMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMap_ItemClick);
             // 
             // BtnPasswordManager
             // 
@@ -367,7 +352,6 @@ namespace Otomasyon_V0
             // 
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.BtnDepartmentList);
-            this.ribbonPageGroup2.ItemLinks.Add(this.BtnDepartmentAdd);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
             // ribbonPageGroup8
@@ -389,7 +373,6 @@ namespace Otomasyon_V0
             // 
             this.ribbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup3.ItemLinks.Add(this.BtnEmployeeList);
-            this.ribbonPageGroup3.ItemLinks.Add(this.BtnEmployeeAdd);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // ribbonPageGroup9
@@ -516,11 +499,9 @@ namespace Otomasyon_V0
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem BtnHomePage;
         private DevExpress.XtraBars.BarButtonItem BtnDepartmentList;
-        private DevExpress.XtraBars.BarButtonItem BtnDepartmentAdd;
         private DevExpress.XtraBars.BarButtonItem BtnDepartmentStatistics;
         private DevExpress.XtraBars.BarButtonItem BtnDepartmentReport;
         private DevExpress.XtraBars.BarButtonItem BtnEmployeeList;
-        private DevExpress.XtraBars.BarButtonItem BtnEmployeeAdd;
         private DevExpress.XtraBars.BarButtonItem BtnEmployeeStatistics;
         private DevExpress.XtraBars.BarButtonItem BtnEmployeeReport;
         private DevExpress.XtraBars.BarButtonItem BtnCompanyList;

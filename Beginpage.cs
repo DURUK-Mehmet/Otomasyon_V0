@@ -60,5 +60,30 @@ namespace Otomasyon_V0
             FrmTaskAdd frmTaskAdd = new FrmTaskAdd();
             frmTaskAdd.Show();
         }
+
+        private void BtnCalculator_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Windows\System32\calc.exe");
+        }
+
+        private void BtnYoutube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://www.youtube.com/");
+        }
+
+        private void BtnNews_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://www.haberler.com/");
+        }
+
+        private void BtnFinance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://tr.investing.com/");
+        }
+
+        private void BtnMap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://earth.google.com/web/");
+        }
     }
 }
