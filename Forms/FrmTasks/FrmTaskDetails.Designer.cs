@@ -45,6 +45,7 @@ namespace Otomasyon_V0.Forms.FrmTasks
             // 
             // gridControl1
             // 
+            this.gridControl1.CausesValidation = false;
             this.gridControl1.DataSource = this.bindingSource1;
             this.gridControl1.Location = new System.Drawing.Point(2, 1);
             this.gridControl1.MainView = this.gridView1;
@@ -64,7 +65,9 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.gridColumn5});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gridView1_CellValueChanged);
             // 
             // gridColumn1
             // 

@@ -26,5 +26,11 @@ namespace Otomasyon_V0.Forms.FrmTasks
             isTakipOtomasyonEntities.TblGorevDetay.Load();
             bindingSource1.DataSource = isTakipOtomasyonEntities.TblGorevDetay.Local;
         }
+
+        private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            isTakipOtomasyonEntities.SaveChanges();
+
+        }
     }
 }
