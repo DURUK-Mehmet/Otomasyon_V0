@@ -85,5 +85,11 @@ namespace Otomasyon_V0
         {
             System.Diagnostics.Process.Start(@"https://earth.google.com/web/");
         }
+
+        private void BtnTaskDetails_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmTaskDetails frmTaskDetails = new FrmTaskDetails();
+            frmTaskDetails.Show();
+        }
     }
 }

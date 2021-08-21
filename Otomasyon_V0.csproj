@@ -141,6 +141,12 @@
     <Compile Include="Forms\FrmTasks\FrmTaskAdd.Designer.cs">
       <DependentUpon>FrmTaskAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmTasks\FrmTaskDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTasks\FrmTaskDetails.Designer.cs">
+      <DependentUpon>FrmTaskDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmTasks\FrmTasksList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTasks\FrmTaskAdd.resx">
       <DependentUpon>FrmTaskAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTasks\FrmTaskDetails.resx">
+      <DependentUpon>FrmTaskDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTasks\FrmTasksList.resx">
       <DependentUpon>FrmTasksList.cs</DependentUpon>

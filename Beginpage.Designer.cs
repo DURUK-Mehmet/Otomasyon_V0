@@ -249,6 +249,7 @@ namespace Otomasyon_V0
             this.BtnTaskDetails.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTaskDetails.ImageOptions.Image")));
             this.BtnTaskDetails.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnTaskDetails.ImageOptions.LargeImage")));
             this.BtnTaskDetails.Name = "BtnTaskDetails";
+            this.BtnTaskDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnTaskDetails_ItemClick);
             // 
             // BtnTaskFinish
             // 
