@@ -40,13 +40,11 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.LkUpTakeTask = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.BtnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.TxtTaskDetails = new DevExpress.XtraEditors.MemoEdit();
+            this.CheckActive = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.PnlControlTaskAdd)).BeginInit();
             this.PnlControlTaskAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtGiveTask.Properties)).BeginInit();
@@ -55,20 +53,17 @@ namespace Otomasyon_V0.Forms.FrmTasks
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LkUpTakeTask.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTaskDetails.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckActive.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlControlTaskAdd
             // 
-            this.PnlControlTaskAdd.Controls.Add(this.checkEdit1);
-            this.PnlControlTaskAdd.Controls.Add(this.labelControl5);
-            this.PnlControlTaskAdd.Controls.Add(this.textEdit2);
+            this.PnlControlTaskAdd.Controls.Add(this.CheckActive);
             this.PnlControlTaskAdd.Controls.Add(this.labelControl4);
-            this.PnlControlTaskAdd.Controls.Add(this.textEdit1);
+            this.PnlControlTaskAdd.Controls.Add(this.TxtTaskDetails);
             this.PnlControlTaskAdd.Controls.Add(this.labelControl6);
-            this.PnlControlTaskAdd.Controls.Add(this.simpleButton1);
+            this.PnlControlTaskAdd.Controls.Add(this.BtnDelete);
             this.PnlControlTaskAdd.Controls.Add(this.BtnAdd);
             this.PnlControlTaskAdd.Controls.Add(this.labelControl3);
             this.PnlControlTaskAdd.Controls.Add(this.LkUpTakeTask);
@@ -93,7 +88,7 @@ namespace Otomasyon_V0.Forms.FrmTasks
             // DateFinish
             // 
             this.DateFinish.EditValue = new System.DateTime(2021, 8, 21, 3, 23, 1, 0);
-            this.DateFinish.Location = new System.Drawing.Point(183, 159);
+            this.DateFinish.Location = new System.Drawing.Point(183, 175);
             this.DateFinish.Name = "DateFinish";
             this.DateFinish.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DateFinish.Properties.Appearance.Options.UseFont = true;
@@ -154,6 +149,7 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.LkUpTakeTask.Name = "LkUpTakeTask";
             this.LkUpTakeTask.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpTakeTask.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.LkUpTakeTask.Size = new System.Drawing.Size(120, 20);
             this.LkUpTakeTask.TabIndex = 8;
             // 
@@ -161,7 +157,7 @@ namespace Otomasyon_V0.Forms.FrmTasks
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(205, 134);
+            this.labelControl3.Location = new System.Drawing.Point(205, 150);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(75, 19);
             this.labelControl3.TabIndex = 9;
@@ -175,15 +171,17 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.BtnAdd.Size = new System.Drawing.Size(150, 40);
             this.BtnAdd.TabIndex = 14;
             this.BtnAdd.Text = "Görev Ver";
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
-            // simpleButton1
+            // BtnDelete
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(325, 400);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(150, 40);
-            this.simpleButton1.TabIndex = 15;
-            this.simpleButton1.Text = "Vazgeç";
+            this.BtnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnDelete.Location = new System.Drawing.Point(325, 400);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(150, 40);
+            this.BtnDelete.TabIndex = 15;
+            this.BtnDelete.Text = "Vazgeç";
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // labelControl6
             // 
@@ -195,23 +193,6 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.labelControl6.TabIndex = 16;
             this.labelControl6.Text = "Durum:";
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(30, 199);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(89, 19);
-            this.labelControl5.TabIndex = 20;
-            this.labelControl5.Text = "Görev Konu:";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(155, 199);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(295, 20);
-            this.textEdit2.TabIndex = 19;
-            // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -222,20 +203,20 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.labelControl4.TabIndex = 18;
             this.labelControl4.Text = "Görev Detay:";
             // 
-            // textEdit1
+            // TxtTaskDetails
             // 
-            this.textEdit1.Location = new System.Drawing.Point(155, 239);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(296, 118);
-            this.textEdit1.TabIndex = 17;
+            this.TxtTaskDetails.Location = new System.Drawing.Point(155, 239);
+            this.TxtTaskDetails.Name = "TxtTaskDetails";
+            this.TxtTaskDetails.Size = new System.Drawing.Size(296, 118);
+            this.TxtTaskDetails.TabIndex = 17;
             // 
-            // checkEdit1
+            // CheckActive
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(66, 407);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Aktif";
-            this.checkEdit1.Size = new System.Drawing.Size(75, 20);
-            this.checkEdit1.TabIndex = 21;
+            this.CheckActive.Location = new System.Drawing.Point(66, 407);
+            this.CheckActive.Name = "CheckActive";
+            this.CheckActive.Properties.Caption = "Aktif";
+            this.CheckActive.Size = new System.Drawing.Size(75, 20);
+            this.CheckActive.TabIndex = 21;
             // 
             // FrmTaskAdd
             // 
@@ -246,6 +227,7 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.Name = "FrmTaskAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Görev Ekleme";
+            this.Load += new System.EventHandler(this.FrmTaskAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PnlControlTaskAdd)).EndInit();
             this.PnlControlTaskAdd.ResumeLayout(false);
             this.PnlControlTaskAdd.PerformLayout();
@@ -255,9 +237,8 @@ namespace Otomasyon_V0.Forms.FrmTasks
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LkUpTakeTask.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTaskDetails.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckActive.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -273,13 +254,11 @@ namespace Otomasyon_V0.Forms.FrmTasks
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton BtnDelete;
         private DevExpress.XtraEditors.SimpleButton BtnAdd;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.MemoEdit textEdit1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.MemoEdit TxtTaskDetails;
+        private DevExpress.XtraEditors.CheckEdit CheckActive;
     }
 }
