@@ -38,15 +38,15 @@ namespace Otomasyon_V0.Forms
             this.grdControlTasksList = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pnlControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.LblTotalDepartment = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.pnlControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.pnlControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalDepartment = new DevExpress.XtraEditors.LabelControl();
             this.LblActiveTask = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlControl3 = new DevExpress.XtraEditors.PanelControl();
             this.LblPasiveTask = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.grdControlTasksList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -88,12 +88,36 @@ namespace Otomasyon_V0.Forms
             this.pnlControl1.Appearance.Options.UseBackColor = true;
             this.pnlControl1.Controls.Add(this.LblTotalDepartment);
             this.pnlControl1.Controls.Add(this.labelControl1);
-            this.pnlControl1.Location = new System.Drawing.Point(505, 15);
+            this.pnlControl1.Location = new System.Drawing.Point(506, 15);
             this.pnlControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.pnlControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pnlControl1.Name = "pnlControl1";
             this.pnlControl1.Size = new System.Drawing.Size(230, 150);
             this.pnlControl1.TabIndex = 1;
+            // 
+            // LblTotalDepartment
+            // 
+            this.LblTotalDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalDepartment.Appearance.Options.UseFont = true;
+            this.LblTotalDepartment.Location = new System.Drawing.Point(110, 65);
+            this.LblTotalDepartment.Name = "LblTotalDepartment";
+            this.LblTotalDepartment.Size = new System.Drawing.Size(15, 33);
+            this.LblTotalDepartment.TabIndex = 1;
+            this.LblTotalDepartment.Text = "0";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl1.Appearance.Options.UseBackColor = true;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(50, 6);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(137, 19);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Toplam Departman";
             // 
             // chartControl1
             // 
@@ -120,6 +144,7 @@ namespace Otomasyon_V0.Forms
             // 
             this.pnlControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(102)))), ((int)(((byte)(69)))));
             this.pnlControl2.Appearance.Options.UseBackColor = true;
+            this.pnlControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pnlControl2.Controls.Add(this.LblActiveTask);
             this.pnlControl2.Controls.Add(this.labelControl2);
             this.pnlControl2.Location = new System.Drawing.Point(765, 15);
@@ -129,32 +154,15 @@ namespace Otomasyon_V0.Forms
             this.pnlControl2.Size = new System.Drawing.Size(230, 150);
             this.pnlControl2.TabIndex = 3;
             // 
-            // pnlControl3
+            // LblActiveTask
             // 
-            this.pnlControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(74)))), ((int)(((byte)(89)))));
-            this.pnlControl3.Appearance.Options.UseBackColor = true;
-            this.pnlControl3.Controls.Add(this.LblPasiveTask);
-            this.pnlControl3.Controls.Add(this.labelControl3);
-            this.pnlControl3.Location = new System.Drawing.Point(1025, 15);
-            this.pnlControl3.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
-            this.pnlControl3.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.pnlControl3.Name = "pnlControl3";
-            this.pnlControl3.Size = new System.Drawing.Size(230, 150);
-            this.pnlControl3.TabIndex = 2;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl1.Appearance.Options.UseBackColor = true;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(50, 6);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(137, 19);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Toplam Departman";
+            this.LblActiveTask.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblActiveTask.Appearance.Options.UseFont = true;
+            this.LblActiveTask.Location = new System.Drawing.Point(110, 65);
+            this.LblActiveTask.Name = "LblActiveTask";
+            this.LblActiveTask.Size = new System.Drawing.Size(15, 33);
+            this.LblActiveTask.TabIndex = 2;
+            this.LblActiveTask.Text = "0";
             // 
             // labelControl2
             // 
@@ -170,6 +178,29 @@ namespace Otomasyon_V0.Forms
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Aktif Görev Sayısı";
             // 
+            // pnlControl3
+            // 
+            this.pnlControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(74)))), ((int)(((byte)(89)))));
+            this.pnlControl3.Appearance.Options.UseBackColor = true;
+            this.pnlControl3.Controls.Add(this.LblPasiveTask);
+            this.pnlControl3.Controls.Add(this.labelControl3);
+            this.pnlControl3.Location = new System.Drawing.Point(1025, 15);
+            this.pnlControl3.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.pnlControl3.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.pnlControl3.Name = "pnlControl3";
+            this.pnlControl3.Size = new System.Drawing.Size(230, 150);
+            this.pnlControl3.TabIndex = 2;
+            // 
+            // LblPasiveTask
+            // 
+            this.LblPasiveTask.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblPasiveTask.Appearance.Options.UseFont = true;
+            this.LblPasiveTask.Location = new System.Drawing.Point(110, 65);
+            this.LblPasiveTask.Name = "LblPasiveTask";
+            this.LblPasiveTask.Size = new System.Drawing.Size(15, 33);
+            this.LblPasiveTask.TabIndex = 2;
+            this.LblPasiveTask.Text = "0";
+            // 
             // labelControl3
             // 
             this.labelControl3.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -183,36 +214,6 @@ namespace Otomasyon_V0.Forms
             this.labelControl3.Size = new System.Drawing.Size(125, 19);
             this.labelControl3.TabIndex = 1;
             this.labelControl3.Text = "Pasif Görev Sayısı";
-            // 
-            // LblTotalDepartment
-            // 
-            this.LblTotalDepartment.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalDepartment.Appearance.Options.UseFont = true;
-            this.LblTotalDepartment.Location = new System.Drawing.Point(110, 65);
-            this.LblTotalDepartment.Name = "LblTotalDepartment";
-            this.LblTotalDepartment.Size = new System.Drawing.Size(15, 33);
-            this.LblTotalDepartment.TabIndex = 1;
-            this.LblTotalDepartment.Text = "0";
-            // 
-            // LblActiveTask
-            // 
-            this.LblActiveTask.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblActiveTask.Appearance.Options.UseFont = true;
-            this.LblActiveTask.Location = new System.Drawing.Point(110, 65);
-            this.LblActiveTask.Name = "LblActiveTask";
-            this.LblActiveTask.Size = new System.Drawing.Size(15, 33);
-            this.LblActiveTask.TabIndex = 2;
-            this.LblActiveTask.Text = "0";
-            // 
-            // LblPasiveTask
-            // 
-            this.LblPasiveTask.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblPasiveTask.Appearance.Options.UseFont = true;
-            this.LblPasiveTask.Location = new System.Drawing.Point(110, 65);
-            this.LblPasiveTask.Name = "LblPasiveTask";
-            this.LblPasiveTask.Size = new System.Drawing.Size(15, 33);
-            this.LblPasiveTask.TabIndex = 2;
-            this.LblPasiveTask.Text = "0";
             // 
             // chartControl2
             // 

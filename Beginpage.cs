@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Otomasyon_V0.Forms;
 using Otomasyon_V0.Forms.FrmEmployee;
+using Otomasyon_V0.Forms.FrmTasks;
 
 namespace Otomasyon_V0
 {
@@ -52,6 +53,12 @@ namespace Otomasyon_V0
             FrmEmployeeStatistic frmEmployeeStatistic = new FrmEmployeeStatistic();
             frmEmployeeStatistic.MdiParent = this;
             frmEmployeeStatistic.Show();
+        }
+
+        private void BtnTaskAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmTaskAdd frmTaskAdd = new FrmTaskAdd();
+            frmTaskAdd.Show();
         }
     }
 }

@@ -244,6 +244,7 @@ namespace Otomasyon_V0
             this.BtnTaskAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTaskAdd.ImageOptions.Image")));
             this.BtnTaskAdd.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnTaskAdd.ImageOptions.LargeImage")));
             this.BtnTaskAdd.Name = "BtnTaskAdd";
+            this.BtnTaskAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnTaskAdd_ItemClick);
             // 
             // BtnTaskCountinue
             // 
