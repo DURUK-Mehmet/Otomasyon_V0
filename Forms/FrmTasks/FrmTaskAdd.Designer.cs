@@ -149,7 +149,9 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.LkUpTakeTask.Name = "LkUpTakeTask";
             this.LkUpTakeTask.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpTakeTask.Properties.NullText = "Personeller";
             this.LkUpTakeTask.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.LkUpTakeTask.Properties.ThrowExceptionOnInvalidLookUpEditValueType = true;
             this.LkUpTakeTask.Size = new System.Drawing.Size(120, 20);
             this.LkUpTakeTask.TabIndex = 8;
             // 

@@ -46,11 +46,10 @@ namespace Otomasyon_V0.Forms.FrmTasks
                          select new
                          {
                              x.ID,
-                             x.Ad,
-                             x.Soyad
+                             Name=x.Ad+" "+x.Soyad
                          }).ToList();
             LkUpTakeTask.Properties.ValueMember = "ID";
-            LkUpTakeTask.Properties.DisplayMember = "Ad";
+            LkUpTakeTask.Properties.DisplayMember = "Name";
             LkUpTakeTask.Properties.DataSource = value;
         }
     }
