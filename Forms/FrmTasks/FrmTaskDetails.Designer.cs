@@ -38,9 +38,13 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.görevSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vazgeçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -109,6 +113,27 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.görevSilToolStripMenuItem,
+            this.vazgeçToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            // 
+            // görevSilToolStripMenuItem
+            // 
+            this.görevSilToolStripMenuItem.Name = "görevSilToolStripMenuItem";
+            this.görevSilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.görevSilToolStripMenuItem.Text = "Görev Sil";
+            this.görevSilToolStripMenuItem.Click += new System.EventHandler(this.görevSilToolStripMenuItem_Click);
+            // 
+            // vazgeçToolStripMenuItem
+            // 
+            this.vazgeçToolStripMenuItem.Name = "vazgeçToolStripMenuItem";
+            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vazgeçToolStripMenuItem.Text = "Vazgeç";
+            // 
             // FrmTaskDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,6 +146,7 @@ namespace Otomasyon_V0.Forms.FrmTasks
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,5 +161,8 @@ namespace Otomasyon_V0.Forms.FrmTasks
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem görevSilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vazgeçToolStripMenuItem;
     }
 }

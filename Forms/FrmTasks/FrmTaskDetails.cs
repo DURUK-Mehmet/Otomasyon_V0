@@ -32,5 +32,11 @@ namespace Otomasyon_V0.Forms.FrmTasks
             isTakipOtomasyonEntities.SaveChanges();
 
         }
+
+        private void görevSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent();
+            isTakipOtomasyonEntities.SaveChanges();
+        }
     }
 }

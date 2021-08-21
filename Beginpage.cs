@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Otomasyon_V0.Forms;
 using Otomasyon_V0.Forms.FrmEmployee;
 using Otomasyon_V0.Forms.FrmTasks;
+using Otomasyon_V0.DBEntity;
 
 namespace Otomasyon_V0
 {
@@ -20,45 +21,75 @@ namespace Otomasyon_V0
             InitializeComponent();
         }
 
+        isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
+
+        FrmEmployeeList frmEmployeeList;
+        FrmCompaniesList frmCompaniesList;
+        FrmDepartmentList frmDepartmentList;
+        FrmTasksList frmTasksList;
+        FrmEmployeeStatistic frmEmployeeStatistic;
+        FrmTaskAdd frmTaskAdd;
+        FrmTaskDetails frmTaskDetails;
+
+
         private void BtnEmployeeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmEmployeeList frmEmployeeList = new FrmEmployeeList();
-            frmEmployeeList.MdiParent = this;
-            frmEmployeeList.Show();
+            if (frmEmployeeList==null||frmEmployeeList.IsDisposed)
+            {
+                frmEmployeeList= new FrmEmployeeList();
+                frmEmployeeList.MdiParent = this;
+                frmEmployeeList.Show();
+            }
+            
         }
 
         private void BtnCompanyList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmCompaniesList frmCompaniesList = new FrmCompaniesList();
-            frmCompaniesList.MdiParent = this;
-            frmCompaniesList.Show();
+            if (frmCompaniesList == null || frmCompaniesList.IsDisposed)
+            {
+                frmCompaniesList = new FrmCompaniesList();
+                frmCompaniesList.MdiParent = this;
+                frmCompaniesList.Show();
+            }
         }
 
         private void BtnDepartmentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmDepartmentList frmDepartmentList = new FrmDepartmentList();
-            frmDepartmentList.MdiParent = this;
-            frmDepartmentList.Show();
+            if (frmDepartmentList == null || frmDepartmentList.IsDisposed)
+            {
+                frmDepartmentList = new FrmDepartmentList();
+                frmDepartmentList.MdiParent = this;
+                frmDepartmentList.Show();
+            }
         }
 
         private void BtnTaskList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmTasksList frmTasksList = new FrmTasksList();
-            frmTasksList.MdiParent = this;
-            frmTasksList.Show();
+            if (frmTasksList == null || frmTasksList.IsDisposed)
+            {
+                frmTasksList = new FrmTasksList();
+                frmTasksList.MdiParent = this;
+                frmTasksList.Show();
+            }
         }
 
         private void BtnEmployeeStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmEmployeeStatistic frmEmployeeStatistic = new FrmEmployeeStatistic();
-            frmEmployeeStatistic.MdiParent = this;
-            frmEmployeeStatistic.Show();
+            if (frmEmployeeStatistic == null || frmEmployeeStatistic.IsDisposed)
+            {
+                frmEmployeeStatistic = new FrmEmployeeStatistic();
+                frmEmployeeStatistic.MdiParent = this;
+                frmEmployeeStatistic.Show();
+            }
         }
 
         private void BtnTaskAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmTaskAdd frmTaskAdd = new FrmTaskAdd();
-            frmTaskAdd.Show();
+            if (frmTaskAdd == null || frmTaskAdd.IsDisposed)
+            {
+                frmTaskAdd = new FrmTaskAdd();
+                frmTaskAdd.Show();
+            }
         }
 
         private void BtnCalculator_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -88,8 +119,11 @@ namespace Otomasyon_V0
 
         private void BtnTaskDetails_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmTaskDetails frmTaskDetails = new FrmTaskDetails();
-            frmTaskDetails.Show();
+            if (frmTaskDetails == null || frmTaskDetails.IsDisposed)
+            {
+                frmTaskDetails = new FrmTaskDetails();
+                frmTaskDetails.Show();
+            }
         }
     }
 }
