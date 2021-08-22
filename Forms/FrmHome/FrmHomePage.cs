@@ -25,17 +25,18 @@ namespace Otomasyon_V0.Forms.FrmHome
 
         private void FrmHomePage_Load(object sender, EventArgs e)
         {
-            //Continue Task Always
+            //Continue Tasks Always
             grdControlHome1.DataSource = (from x in isTakipOtomasyonEntities.TblGorev
                                           select new
                                           {
                                               x.Aciklama,
                                               Personel=x.TblPersonel.Ad+" "+x.TblPersonel.Soyad,
-                                              x.Durum
+                                              x.Durum,
+                                              x.Tarih
                                           }).Where(x=>x.Durum==true).ToList();
             gridView1.Columns["Durum"].Visible = false;
 
-            //Continue Task Today
+            //Continue Tasks Today
 
             grdControlHome2.DataSource = (from x in isTakipOtomasyonEntities.TblGorevDetay select new
                                             {
@@ -44,9 +45,17 @@ namespace Otomasyon_V0.Forms.FrmHome
                                                 x.Tarih
                                              }).Where(x => x.Tarih == Today).ToList();
 
-                                       
+            //Last Tasks
+
+            grdControlHome3.DataSource = (from x in isTakipOtomasyonEntities.TblGorevDetay
+                                          select new
+                                          {
+                                              x.Aciklama,
+                                              x.Tarih
+                                          }).Where(x => x.Tarih < Today).ToList();
+
+
         }
 
-        
     }
 }
