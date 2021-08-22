@@ -32,6 +32,7 @@ namespace Otomasyon_V0
         FrmEmployeeStatistic frmEmployeeStatistic;
         FrmTaskAdd frmTaskAdd;
         FrmTaskDetails frmTaskDetails;
+        FrmActiveTasks frmActiveTasks;
 
 
         private void BtnEmployeeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -137,5 +138,13 @@ namespace Otomasyon_V0
                 frmHomePage.Show();
             }
         }
+
+        private void BtnTaskCountinue_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmActiveTasks = new FrmActiveTasks();
+            frmActiveTasks.Show();
+        }
+
+        
     }
 }

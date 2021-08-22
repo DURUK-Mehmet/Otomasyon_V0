@@ -73,7 +73,6 @@ namespace Otomasyon_V0.Forms
             isTakipOtomasyonEntities.SaveChanges();
             List();
             XtraMessageBox.Show("Güncelleme İşlemi Başarıyla Gerçekleşti","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
-
         }
     }
 }
