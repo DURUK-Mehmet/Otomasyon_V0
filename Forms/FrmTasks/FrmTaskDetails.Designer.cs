@@ -119,19 +119,19 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.görevSilToolStripMenuItem,
             this.vazgeçToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(121, 48);
             // 
             // görevSilToolStripMenuItem
             // 
             this.görevSilToolStripMenuItem.Name = "görevSilToolStripMenuItem";
-            this.görevSilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.görevSilToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.görevSilToolStripMenuItem.Text = "Görev Sil";
             this.görevSilToolStripMenuItem.Click += new System.EventHandler(this.görevSilToolStripMenuItem_Click);
             // 
             // vazgeçToolStripMenuItem
             // 
             this.vazgeçToolStripMenuItem.Name = "vazgeçToolStripMenuItem";
-            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.vazgeçToolStripMenuItem.Text = "Vazgeç";
             // 
             // FrmTaskDetails

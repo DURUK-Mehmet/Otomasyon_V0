@@ -131,6 +131,7 @@ namespace Otomasyon_V0
             this.BtnHomePage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnHomePage.ImageOptions.Image")));
             this.BtnHomePage.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnHomePage.ImageOptions.LargeImage")));
             this.BtnHomePage.Name = "BtnHomePage";
+            this.BtnHomePage.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHomePage_ItemClick);
             // 
             // BtnDepartmentList
             // 

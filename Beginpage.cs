@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Otomasyon_V0.Forms;
+using Otomasyon_V0.Forms.FrmHome;
 using Otomasyon_V0.Forms.FrmEmployee;
 using Otomasyon_V0.Forms.FrmTasks;
 using Otomasyon_V0.DBEntity;
@@ -23,6 +24,7 @@ namespace Otomasyon_V0
 
         isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
 
+        FrmHomePage frmHomePage;
         FrmEmployeeList frmEmployeeList;
         FrmCompaniesList frmCompaniesList;
         FrmDepartmentList frmDepartmentList;
@@ -123,6 +125,16 @@ namespace Otomasyon_V0
             {
                 frmTaskDetails = new FrmTaskDetails();
                 frmTaskDetails.Show();
+            }
+        }
+
+        private void BtnHomePage_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmHomePage==null||frmHomePage.IsDisposed)
+            {
+                frmHomePage = new FrmHomePage();
+                frmHomePage.MdiParent = this;
+                frmHomePage.Show();
             }
         }
     }
