@@ -56,13 +56,11 @@ namespace Otomasyon_V0
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnDepartment = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnEmployee = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnCompanies = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnTasks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -301,8 +299,7 @@ namespace Otomasyon_V0
             // RbnDepartment
             // 
             this.RbnDepartment.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup8});
+            this.ribbonPageGroup2});
             this.RbnDepartment.Name = "RbnDepartment";
             this.RbnDepartment.Text = "Departmanlar";
             // 
@@ -311,12 +308,6 @@ namespace Otomasyon_V0
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.BtnDepartmentList);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonPageGroup8.ItemLinks.Add(this.BtnDepartmentStatistics);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             // 
             // RbnEmployee
             // 
@@ -341,8 +332,7 @@ namespace Otomasyon_V0
             // RbnCompanies
             // 
             this.RbnCompanies.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup10});
+            this.ribbonPageGroup4});
             this.RbnCompanies.Name = "RbnCompanies";
             this.RbnCompanies.Text = "Firmalar";
             // 
@@ -351,12 +341,6 @@ namespace Otomasyon_V0
             this.ribbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup4.ItemLinks.Add(this.BtnCompanyList);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonPageGroup10.ItemLinks.Add(this.BtnCompanyStatistics);
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // RbnTasks
             // 
@@ -433,13 +417,11 @@ namespace Otomasyon_V0
         private DevExpress.XtraBars.BarButtonItem BtnTaskList;
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnDepartment;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnEmployee;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnCompanies;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnTasks;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnTools;

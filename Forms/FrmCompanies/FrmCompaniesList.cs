@@ -22,6 +22,8 @@ namespace Otomasyon_V0.Forms
         }
 
         isTakipOtomasyonEntities isTakipOtomasyonEntities = new isTakipOtomasyonEntities();
+        FrmCompanieUpdate frmCompanieUpdate = new FrmCompanieUpdate();
+        int find;
 
         void List()
         {
@@ -59,7 +61,7 @@ namespace Otomasyon_V0.Forms
 
         private void BtnCompanieDelet_Click(object sender, EventArgs e)
         {
-            int find = int.Parse(TxtID.Text);
+            find = int.Parse(TxtID.Text);
             var value = isTakipOtomasyonEntities.TblFirma.Find(find);
             isTakipOtomasyonEntities.TblFirma.Remove(value);
             isTakipOtomasyonEntities.SaveChanges();

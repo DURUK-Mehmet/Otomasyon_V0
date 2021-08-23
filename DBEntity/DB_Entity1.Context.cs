@@ -25,12 +25,11 @@ namespace Otomasyon_V0.DBEntity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<TblAdmin> TblAdmin { get; set; }
         public virtual DbSet<TblDepartman> TblDepartman { get; set; }
         public virtual DbSet<TblFirma> TblFirma { get; set; }
         public virtual DbSet<TblGorev> TblGorev { get; set; }
         public virtual DbSet<TblGorevDetay> TblGorevDetay { get; set; }
         public virtual DbSet<TblPersonel> TblPersonel { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TblAdmin> TblAdmin { get; set; }
     }
 }

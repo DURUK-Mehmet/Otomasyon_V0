@@ -15,7 +15,7 @@ namespace Otomasyon_V0.DBEntity
     public partial class TblAdmin
     {
         public int ID { get; set; }
-        public string KullaniciAd { get; set; }
-        public string KullaniciSifre { get; set; }
+        public string KullanıcıAdı { get; set; }
+        public string KullanıcıŞifre { get; set; }
     }
 }

@@ -5,7 +5,6 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3c838e96795c42eebdbd52d662663fb3" Name="Diagram1">
-        <EntityTypeShape EntityType="isTakipOtomasyonModel.TblAdmin" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="isTakipOtomasyonModel.TblDepartman" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
         <EntityTypeShape EntityType="isTakipOtomasyonModel.TblFirma" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="isTakipOtomasyonModel.TblGorev" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
@@ -15,7 +14,7 @@
         <AssociationConnector Association="isTakipOtomasyonModel.FK_TblGorev_TblPersonel" ManuallyRouted="false" />
         <AssociationConnector Association="isTakipOtomasyonModel.FK_TblGorev_TblPersonel1" ManuallyRouted="false" />
         <AssociationConnector Association="isTakipOtomasyonModel.FK_TblGorevDetay_TblGorev" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="isTakipOtomasyonModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="4.75" />
+        <EntityTypeShape EntityType="isTakipOtomasyonModel.TblAdmin" Width="1.5" PointX="5.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -29,277 +29,153 @@ namespace Otomasyon_V0.Forms.FrmCompanies
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCompanieUpdate));
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.BtnClosed = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnCompanieAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtCompanieDistrict = new DevExpress.XtraEditors.TextEdit();
-            this.TxtCompanieCity = new DevExpress.XtraEditors.TextEdit();
-            this.TxtCompanieAuthorized = new DevExpress.XtraEditors.TextEdit();
-            this.TxtCompanieBranch = new DevExpress.XtraEditors.TextEdit();
-            this.TxtCompanieMail = new DevExpress.XtraEditors.TextEdit();
-            this.TxtCompanieNumber = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtCompanieName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtCompanieAddress = new DevExpress.XtraEditors.MemoEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieDistrict.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieCity.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieAuthorized.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieBranch.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieNumber.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieAddress.Properties)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelControl1
+            // gridControl1
             // 
-            this.panelControl1.Controls.Add(this.BtnClosed);
-            this.panelControl1.Controls.Add(this.BtnCompanieAdd);
-            this.panelControl1.Controls.Add(this.TxtCompanieDistrict);
-            this.panelControl1.Controls.Add(this.TxtCompanieCity);
-            this.panelControl1.Controls.Add(this.TxtCompanieAuthorized);
-            this.panelControl1.Controls.Add(this.TxtCompanieBranch);
-            this.panelControl1.Controls.Add(this.TxtCompanieMail);
-            this.panelControl1.Controls.Add(this.TxtCompanieNumber);
-            this.panelControl1.Controls.Add(this.labelControl8);
-            this.panelControl1.Controls.Add(this.labelControl7);
-            this.panelControl1.Controls.Add(this.TxtCompanieName);
-            this.panelControl1.Controls.Add(this.labelControl6);
-            this.panelControl1.Controls.Add(this.labelControl5);
-            this.panelControl1.Controls.Add(this.labelControl4);
-            this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Controls.Add(this.labelControl2);
-            this.panelControl1.Controls.Add(this.labelControl1);
-            this.panelControl1.Controls.Add(this.TxtCompanieAddress);
-            this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(550, 450);
-            this.panelControl1.TabIndex = 0;
+            this.gridControl1.DataSource = this.bindingSource1;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(884, 461);
+            this.gridControl1.TabIndex = 2;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
-            // BtnClosed
+            // gridView1
             // 
-            this.BtnClosed.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnClosed.ImageOptions.Image")));
-            this.BtnClosed.Location = new System.Drawing.Point(408, 177);
-            this.BtnClosed.Name = "BtnClosed";
-            this.BtnClosed.Size = new System.Drawing.Size(125, 50);
-            this.BtnClosed.TabIndex = 35;
-            this.BtnClosed.Text = "İşlemi İptal Et";
-            this.BtnClosed.Click += new System.EventHandler(this.BtnClosed_Click);
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gridView1_CellValueChanged);
             // 
-            // BtnCompanieAdd
+            // gridColumn1
             // 
-            this.BtnCompanieAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCompanieAdd.ImageOptions.Image")));
-            this.BtnCompanieAdd.Location = new System.Drawing.Point(408, 77);
-            this.BtnCompanieAdd.Name = "BtnCompanieAdd";
-            this.BtnCompanieAdd.Size = new System.Drawing.Size(125, 50);
-            this.BtnCompanieAdd.TabIndex = 34;
-            this.BtnCompanieAdd.Text = "Firmayı Güncele";
+            this.gridColumn1.Caption = "ID";
+            this.gridColumn1.FieldName = "ID";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
             // 
-            // TxtCompanieDistrict
+            // gridColumn2
             // 
-            this.TxtCompanieDistrict.Location = new System.Drawing.Point(138, 327);
-            this.TxtCompanieDistrict.Name = "TxtCompanieDistrict";
-            this.TxtCompanieDistrict.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieDistrict.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieDistrict.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieDistrict.TabIndex = 32;
+            this.gridColumn2.Caption = "Ad";
+            this.gridColumn2.FieldName = "Ad";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
             // 
-            // TxtCompanieCity
+            // gridColumn3
             // 
-            this.TxtCompanieCity.Location = new System.Drawing.Point(138, 277);
-            this.TxtCompanieCity.Name = "TxtCompanieCity";
-            this.TxtCompanieCity.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieCity.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieCity.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieCity.TabIndex = 31;
+            this.gridColumn3.Caption = "Telefon";
+            this.gridColumn3.FieldName = "Telefon";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
             // 
-            // TxtCompanieAuthorized
+            // gridColumn4
             // 
-            this.TxtCompanieAuthorized.Location = new System.Drawing.Point(138, 227);
-            this.TxtCompanieAuthorized.Name = "TxtCompanieAuthorized";
-            this.TxtCompanieAuthorized.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieAuthorized.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieAuthorized.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieAuthorized.TabIndex = 30;
+            this.gridColumn4.Caption = "Mail";
+            this.gridColumn4.FieldName = "Mail";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
             // 
-            // TxtCompanieBranch
+            // gridColumn5
             // 
-            this.TxtCompanieBranch.Location = new System.Drawing.Point(138, 177);
-            this.TxtCompanieBranch.Name = "TxtCompanieBranch";
-            this.TxtCompanieBranch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieBranch.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieBranch.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieBranch.TabIndex = 29;
+            this.gridColumn5.Caption = "Alan";
+            this.gridColumn5.FieldName = "Alan";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
             // 
-            // TxtCompanieMail
+            // gridColumn6
             // 
-            this.TxtCompanieMail.Location = new System.Drawing.Point(138, 127);
-            this.TxtCompanieMail.Name = "TxtCompanieMail";
-            this.TxtCompanieMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieMail.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieMail.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieMail.TabIndex = 28;
+            this.gridColumn6.Caption = "Yetkili";
+            this.gridColumn6.FieldName = "Yetkili";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
             // 
-            // TxtCompanieNumber
+            // gridColumn7
             // 
-            this.TxtCompanieNumber.Location = new System.Drawing.Point(138, 77);
-            this.TxtCompanieNumber.Name = "TxtCompanieNumber";
-            this.TxtCompanieNumber.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieNumber.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieNumber.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieNumber.TabIndex = 27;
+            this.gridColumn7.Caption = "İl";
+            this.gridColumn7.FieldName = "İl";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 6;
             // 
-            // labelControl8
+            // gridColumn8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(18, 377);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(92, 19);
-            this.labelControl8.TabIndex = 26;
-            this.labelControl8.Text = "Firma Adres:";
+            this.gridColumn8.Caption = "İlce";
+            this.gridColumn8.FieldName = "İlce";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 7;
             // 
-            // labelControl7
+            // gridColumn9
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(18, 327);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(76, 19);
-            this.labelControl7.TabIndex = 25;
-            this.labelControl7.Text = "Firma İlçe:";
-            // 
-            // TxtCompanieName
-            // 
-            this.TxtCompanieName.Location = new System.Drawing.Point(138, 27);
-            this.TxtCompanieName.Name = "TxtCompanieName";
-            this.TxtCompanieName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieName.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieName.Size = new System.Drawing.Size(155, 22);
-            this.TxtCompanieName.TabIndex = 24;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(18, 277);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(61, 19);
-            this.labelControl6.TabIndex = 23;
-            this.labelControl6.Text = "Firma İl:";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(18, 227);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(105, 19);
-            this.labelControl5.TabIndex = 22;
-            this.labelControl5.Text = "Firma Yetkilisi:";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(18, 177);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(90, 19);
-            this.labelControl4.TabIndex = 21;
-            this.labelControl4.Text = "Firma Branş:";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(18, 127);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(79, 19);
-            this.labelControl3.TabIndex = 20;
-            this.labelControl3.Text = "Firma Mail:";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(18, 77);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(104, 19);
-            this.labelControl2.TabIndex = 19;
-            this.labelControl2.Text = "Firma Telefon:";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(18, 27);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(71, 19);
-            this.labelControl1.TabIndex = 18;
-            this.labelControl1.Text = "Firma Ad:";
-            // 
-            // TxtCompanieAddress
-            // 
-            this.TxtCompanieAddress.Location = new System.Drawing.Point(138, 377);
-            this.TxtCompanieAddress.Name = "TxtCompanieAddress";
-            this.TxtCompanieAddress.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCompanieAddress.Properties.Appearance.Options.UseFont = true;
-            this.TxtCompanieAddress.Size = new System.Drawing.Size(235, 46);
-            this.TxtCompanieAddress.TabIndex = 33;
+            this.gridColumn9.Caption = "Adres";
+            this.gridColumn9.FieldName = "Adres";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 8;
             // 
             // FrmCompanieUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 451);
-            this.Controls.Add(this.panelControl1);
+            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.gridControl1);
             this.Name = "FrmCompanieUpdate";
             this.Text = "Firma Günecelleme";
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieDistrict.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieCity.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieAuthorized.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieBranch.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieNumber.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCompanieAddress.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.FrmCompanieUpdate_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.SimpleButton BtnClosed;
-        private DevExpress.XtraEditors.SimpleButton BtnCompanieAdd;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieDistrict;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieCity;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieAuthorized;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieBranch;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieMail;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieNumber;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit TxtCompanieName;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.MemoEdit TxtCompanieAddress;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
     }
 }
