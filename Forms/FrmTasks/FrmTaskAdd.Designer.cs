@@ -31,30 +31,30 @@ namespace Otomasyon_V0.Forms.FrmTasks
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTaskAdd));
             this.PnlControlTaskAdd = new DevExpress.XtraEditors.PanelControl();
-            this.TxtGiveTask = new DevExpress.XtraEditors.TextEdit();
-            this.DateFinish = new DevExpress.XtraEditors.DateEdit();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.LkUpTakeTask = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.BtnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.CheckActive = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.TxtTaskDetails = new DevExpress.XtraEditors.MemoEdit();
-            this.CheckActive = new DevExpress.XtraEditors.CheckEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.BtnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.LkUpTakeTask = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.DateFinish = new DevExpress.XtraEditors.DateEdit();
+            this.TxtGiveTask = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.PnlControlTaskAdd)).BeginInit();
             this.PnlControlTaskAdd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtGiveTask.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckActive.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTaskDetails.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpTakeTask.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateFinish.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateFinish.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LkUpTakeTask.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTaskDetails.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CheckActive.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGiveTask.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlControlTaskAdd
@@ -78,48 +78,81 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.PnlControlTaskAdd.Size = new System.Drawing.Size(481, 461);
             this.PnlControlTaskAdd.TabIndex = 0;
             // 
-            // TxtGiveTask
+            // CheckActive
             // 
-            this.TxtGiveTask.Location = new System.Drawing.Point(50, 110);
-            this.TxtGiveTask.Name = "TxtGiveTask";
-            this.TxtGiveTask.Size = new System.Drawing.Size(120, 20);
-            this.TxtGiveTask.TabIndex = 1;
+            this.CheckActive.Location = new System.Drawing.Point(66, 407);
+            this.CheckActive.Name = "CheckActive";
+            this.CheckActive.Properties.Caption = "Aktif";
+            this.CheckActive.Size = new System.Drawing.Size(75, 20);
+            this.CheckActive.TabIndex = 21;
             // 
-            // DateFinish
+            // labelControl4
             // 
-            this.DateFinish.EditValue = new System.DateTime(2021, 8, 21, 3, 23, 1, 0);
-            this.DateFinish.Location = new System.Drawing.Point(183, 175);
-            this.DateFinish.Name = "DateFinish";
-            this.DateFinish.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DateFinish.Properties.Appearance.Options.UseFont = true;
-            this.DateFinish.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(30, 240);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(93, 19);
+            this.labelControl4.TabIndex = 18;
+            this.labelControl4.Text = "Görev Detay:";
+            // 
+            // TxtTaskDetails
+            // 
+            this.TxtTaskDetails.Location = new System.Drawing.Point(155, 239);
+            this.TxtTaskDetails.Name = "TxtTaskDetails";
+            this.TxtTaskDetails.Size = new System.Drawing.Size(296, 118);
+            this.TxtTaskDetails.TabIndex = 17;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(5, 408);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(55, 19);
+            this.labelControl6.TabIndex = 16;
+            this.labelControl6.Text = "Durum:";
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnDelete.ImageOptions.Image")));
+            this.BtnDelete.Location = new System.Drawing.Point(325, 400);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(150, 40);
+            this.BtnDelete.TabIndex = 15;
+            this.BtnDelete.Text = "Vazgeç";
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // BtnAdd
+            // 
+            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.Image")));
+            this.BtnAdd.Location = new System.Drawing.Point(155, 400);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(150, 40);
+            this.BtnAdd.TabIndex = 14;
+            this.BtnAdd.Text = "Görev Ver";
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(205, 150);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(75, 19);
+            this.labelControl3.TabIndex = 9;
+            this.labelControl3.Text = "Bitiş Tarihi";
+            // 
+            // LkUpTakeTask
+            // 
+            this.LkUpTakeTask.Location = new System.Drawing.Point(310, 110);
+            this.LkUpTakeTask.Name = "LkUpTakeTask";
+            this.LkUpTakeTask.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DateFinish.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DateFinish.Size = new System.Drawing.Size(120, 22);
-            this.DateFinish.TabIndex = 2;
-            // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(85, 35);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(50, 50);
-            this.pictureEdit1.TabIndex = 3;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(65, 10);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(88, 19);
-            this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "Görev Veren";
+            this.LkUpTakeTask.Properties.NullText = "Personeller";
+            this.LkUpTakeTask.Properties.ThrowExceptionOnInvalidLookUpEditValueType = true;
+            this.LkUpTakeTask.Size = new System.Drawing.Size(120, 20);
+            this.LkUpTakeTask.TabIndex = 8;
             // 
             // labelControl2
             // 
@@ -143,82 +176,48 @@ namespace Otomasyon_V0.Forms.FrmTasks
             this.pictureEdit2.Size = new System.Drawing.Size(50, 50);
             this.pictureEdit2.TabIndex = 6;
             // 
-            // LkUpTakeTask
+            // labelControl1
             // 
-            this.LkUpTakeTask.Location = new System.Drawing.Point(310, 110);
-            this.LkUpTakeTask.Name = "LkUpTakeTask";
-            this.LkUpTakeTask.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(65, 10);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(88, 19);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "Görev Veren";
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(85, 35);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Size = new System.Drawing.Size(50, 50);
+            this.pictureEdit1.TabIndex = 3;
+            // 
+            // DateFinish
+            // 
+            this.DateFinish.EditValue = new System.DateTime(2021, 8, 21, 3, 23, 1, 0);
+            this.DateFinish.Location = new System.Drawing.Point(183, 175);
+            this.DateFinish.Name = "DateFinish";
+            this.DateFinish.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DateFinish.Properties.Appearance.Options.UseFont = true;
+            this.DateFinish.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LkUpTakeTask.Properties.NullText = "Personeller";
-            this.LkUpTakeTask.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.LkUpTakeTask.Properties.ThrowExceptionOnInvalidLookUpEditValueType = true;
-            this.LkUpTakeTask.Size = new System.Drawing.Size(120, 20);
-            this.LkUpTakeTask.TabIndex = 8;
+            this.DateFinish.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DateFinish.Size = new System.Drawing.Size(120, 22);
+            this.DateFinish.TabIndex = 2;
             // 
-            // labelControl3
+            // TxtGiveTask
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(205, 150);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(75, 19);
-            this.labelControl3.TabIndex = 9;
-            this.labelControl3.Text = "Bitiş Tarihi";
-            // 
-            // BtnAdd
-            // 
-            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.Image")));
-            this.BtnAdd.Location = new System.Drawing.Point(155, 400);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(150, 40);
-            this.BtnAdd.TabIndex = 14;
-            this.BtnAdd.Text = "Görev Ver";
-            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
-            // 
-            // BtnDelete
-            // 
-            this.BtnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.BtnDelete.Location = new System.Drawing.Point(325, 400);
-            this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(150, 40);
-            this.BtnDelete.TabIndex = 15;
-            this.BtnDelete.Text = "Vazgeç";
-            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(5, 408);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(55, 19);
-            this.labelControl6.TabIndex = 16;
-            this.labelControl6.Text = "Durum:";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(30, 240);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(93, 19);
-            this.labelControl4.TabIndex = 18;
-            this.labelControl4.Text = "Görev Detay:";
-            // 
-            // TxtTaskDetails
-            // 
-            this.TxtTaskDetails.Location = new System.Drawing.Point(155, 239);
-            this.TxtTaskDetails.Name = "TxtTaskDetails";
-            this.TxtTaskDetails.Size = new System.Drawing.Size(296, 118);
-            this.TxtTaskDetails.TabIndex = 17;
-            // 
-            // CheckActive
-            // 
-            this.CheckActive.Location = new System.Drawing.Point(66, 407);
-            this.CheckActive.Name = "CheckActive";
-            this.CheckActive.Properties.Caption = "Aktif";
-            this.CheckActive.Size = new System.Drawing.Size(75, 20);
-            this.CheckActive.TabIndex = 21;
+            this.TxtGiveTask.Location = new System.Drawing.Point(50, 110);
+            this.TxtGiveTask.Name = "TxtGiveTask";
+            this.TxtGiveTask.Size = new System.Drawing.Size(120, 20);
+            this.TxtGiveTask.TabIndex = 1;
             // 
             // FrmTaskAdd
             // 
@@ -233,14 +232,14 @@ namespace Otomasyon_V0.Forms.FrmTasks
             ((System.ComponentModel.ISupportInitialize)(this.PnlControlTaskAdd)).EndInit();
             this.PnlControlTaskAdd.ResumeLayout(false);
             this.PnlControlTaskAdd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtGiveTask.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckActive.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTaskDetails.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpTakeTask.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateFinish.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateFinish.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LkUpTakeTask.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTaskDetails.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CheckActive.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGiveTask.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

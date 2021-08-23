@@ -165,6 +165,7 @@ namespace Otomasyon_V0.Forms
             this.Controls.Add(this.grdControlDepartmentList);
             this.Name = "FrmDepartmentList";
             this.Text = "Departman Listesi";
+            this.Load += new System.EventHandler(this.FrmDepartmentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdControlDepartmentList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpControlDepartmentList)).EndInit();

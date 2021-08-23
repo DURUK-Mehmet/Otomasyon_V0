@@ -74,5 +74,10 @@ namespace Otomasyon_V0.Forms
             List();
             XtraMessageBox.Show("Güncelleme İşlemi Başarıyla Gerçekleşti","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+
+        private void FrmDepartmentList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

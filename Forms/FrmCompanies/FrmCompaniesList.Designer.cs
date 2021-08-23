@@ -33,15 +33,17 @@ namespace Otomasyon_V0.Forms
             this.grdControlCompaniesList = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.grpControlCompainesList = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtID = new DevExpress.XtraEditors.TextEdit();
+            this.BtnCompanieUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnCompanieList = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnCompanieDelet = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnCompanieAdd = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.grdControlCompaniesList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpControlCompainesList)).BeginInit();
             this.grpControlCompainesList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // grdControlCompaniesList
@@ -59,54 +61,68 @@ namespace Otomasyon_V0.Forms
             this.gridView1.GridControl = this.grdControlCompaniesList;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // grpControlCompainesList
             // 
-            this.grpControlCompainesList.Controls.Add(this.simpleButton4);
-            this.grpControlCompainesList.Controls.Add(this.simpleButton3);
-            this.grpControlCompainesList.Controls.Add(this.simpleButton2);
-            this.grpControlCompainesList.Controls.Add(this.simpleButton1);
+            this.grpControlCompainesList.Controls.Add(this.TxtID);
+            this.grpControlCompainesList.Controls.Add(this.BtnCompanieUpdate);
+            this.grpControlCompainesList.Controls.Add(this.BtnCompanieList);
+            this.grpControlCompainesList.Controls.Add(this.BtnCompanieDelet);
+            this.grpControlCompainesList.Controls.Add(this.BtnCompanieAdd);
             this.grpControlCompainesList.Controls.Add(this.labelControl1);
-            this.grpControlCompainesList.Location = new System.Drawing.Point(1, 400);
+            this.grpControlCompainesList.Location = new System.Drawing.Point(1, 401);
             this.grpControlCompainesList.Name = "grpControlCompainesList";
             this.grpControlCompainesList.Size = new System.Drawing.Size(1260, 110);
             this.grpControlCompainesList.TabIndex = 1;
             // 
-            // simpleButton4
+            // TxtID
             // 
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(700, 43);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(160, 45);
-            this.simpleButton4.TabIndex = 4;
-            this.simpleButton4.Text = "Seçili Firmayı Güncelle";
+            this.TxtID.Location = new System.Drawing.Point(0, 56);
+            this.TxtID.Name = "TxtID";
+            this.TxtID.Size = new System.Drawing.Size(45, 20);
+            this.TxtID.TabIndex = 2;
+            this.TxtID.Visible = false;
             // 
-            // simpleButton3
+            // BtnCompanieUpdate
             // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(1000, 43);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(160, 45);
-            this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = "Firmaları Listele";
+            this.BtnCompanieUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCompanieUpdate.ImageOptions.Image")));
+            this.BtnCompanieUpdate.Location = new System.Drawing.Point(700, 43);
+            this.BtnCompanieUpdate.Name = "BtnCompanieUpdate";
+            this.BtnCompanieUpdate.Size = new System.Drawing.Size(160, 45);
+            this.BtnCompanieUpdate.TabIndex = 4;
+            this.BtnCompanieUpdate.Text = "Seçili Firmayı Güncelle";
+            this.BtnCompanieUpdate.Click += new System.EventHandler(this.BtnCompanieUpdate_Click);
             // 
-            // simpleButton2
+            // BtnCompanieList
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(400, 43);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(160, 45);
-            this.simpleButton2.TabIndex = 2;
-            this.simpleButton2.Text = "Seçili Firmayı Sil";
+            this.BtnCompanieList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCompanieList.ImageOptions.Image")));
+            this.BtnCompanieList.Location = new System.Drawing.Point(1000, 43);
+            this.BtnCompanieList.Name = "BtnCompanieList";
+            this.BtnCompanieList.Size = new System.Drawing.Size(160, 45);
+            this.BtnCompanieList.TabIndex = 3;
+            this.BtnCompanieList.Text = "Firmaları Listele";
+            this.BtnCompanieList.Click += new System.EventHandler(this.BtnCompanieList_Click);
             // 
-            // simpleButton1
+            // BtnCompanieDelet
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(100, 43);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(160, 45);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "Yeni Firma Ekle";
+            this.BtnCompanieDelet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCompanieDelet.ImageOptions.Image")));
+            this.BtnCompanieDelet.Location = new System.Drawing.Point(400, 43);
+            this.BtnCompanieDelet.Name = "BtnCompanieDelet";
+            this.BtnCompanieDelet.Size = new System.Drawing.Size(160, 45);
+            this.BtnCompanieDelet.TabIndex = 2;
+            this.BtnCompanieDelet.Text = "Seçili Firmayı Sil";
+            this.BtnCompanieDelet.Click += new System.EventHandler(this.BtnCompanieDelet_Click);
+            // 
+            // BtnCompanieAdd
+            // 
+            this.BtnCompanieAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCompanieAdd.ImageOptions.Image")));
+            this.BtnCompanieAdd.Location = new System.Drawing.Point(100, 43);
+            this.BtnCompanieAdd.Name = "BtnCompanieAdd";
+            this.BtnCompanieAdd.Size = new System.Drawing.Size(160, 45);
+            this.BtnCompanieAdd.TabIndex = 1;
+            this.BtnCompanieAdd.Text = "Yeni Firma Ekle";
+            this.BtnCompanieAdd.Click += new System.EventHandler(this.BtnCompanieAdd_Click);
             // 
             // labelControl1
             // 
@@ -127,12 +143,12 @@ namespace Otomasyon_V0.Forms
             this.Controls.Add(this.grdControlCompaniesList);
             this.Name = "FrmCompaniesList";
             this.Text = "Firmalar Listesi";
-            this.Load += new System.EventHandler(this.FrmCompaniesList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdControlCompaniesList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpControlCompainesList)).EndInit();
             this.grpControlCompainesList.ResumeLayout(false);
             this.grpControlCompainesList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -143,9 +159,10 @@ namespace Otomasyon_V0.Forms
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl grpControlCompainesList;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton BtnCompanieUpdate;
+        private DevExpress.XtraEditors.SimpleButton BtnCompanieList;
+        private DevExpress.XtraEditors.SimpleButton BtnCompanieDelet;
+        private DevExpress.XtraEditors.SimpleButton BtnCompanieAdd;
+        private DevExpress.XtraEditors.TextEdit TxtID;
     }
 }

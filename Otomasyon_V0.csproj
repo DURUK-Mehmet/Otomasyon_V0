@@ -111,6 +111,12 @@
     <Compile Include="DBEntity\TblPersonel.cs">
       <DependentUpon>DB_Entity1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmCompanies\FrmCompanieAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCompanies\FrmCompanieAdd.Designer.cs">
+      <DependentUpon>FrmCompanieAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmCompanies\FrmCompaniesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="Forms\FrmCompanies\FrmCompanieStatistic.Designer.cs">
       <DependentUpon>FrmCompanieStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCompanies\FrmCompanieUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCompanies\FrmCompanieUpdate.Designer.cs">
+      <DependentUpon>FrmCompanieUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmDepartment\FrmDepartmentList.cs">
       <SubType>Form</SubType>
@@ -176,8 +188,14 @@
     <EmbeddedResource Include="Beginpage.resx">
       <DependentUpon>Beginpage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCompanies\FrmCompanieAdd.resx">
+      <DependentUpon>FrmCompanieAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCompanies\FrmCompaniesList.resx">
       <DependentUpon>FrmCompaniesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCompanies\FrmCompanieUpdate.resx">
+      <DependentUpon>FrmCompanieUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDepartment\FrmDepartmentList.resx">
       <DependentUpon>FrmDepartmentList.cs</DependentUpon>

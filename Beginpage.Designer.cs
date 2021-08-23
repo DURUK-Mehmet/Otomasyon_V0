@@ -38,7 +38,6 @@ namespace Otomasyon_V0
             this.BtnEmployeeList = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEmployeeStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.BtnCompanyList = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnCompanyAdd = new DevExpress.XtraBars.BarButtonItem();
             this.BtnCompanyStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.BtnTaskList = new DevExpress.XtraBars.BarButtonItem();
             this.BtnTaskAdd = new DevExpress.XtraBars.BarButtonItem();
@@ -86,7 +85,6 @@ namespace Otomasyon_V0
             this.BtnEmployeeList,
             this.BtnEmployeeStatistics,
             this.BtnCompanyList,
-            this.BtnCompanyAdd,
             this.BtnCompanyStatistics,
             this.BtnTaskList,
             this.BtnTaskAdd,
@@ -165,14 +163,6 @@ namespace Otomasyon_V0
             this.BtnCompanyList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnCompanyList.ImageOptions.LargeImage")));
             this.BtnCompanyList.Name = "BtnCompanyList";
             this.BtnCompanyList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCompanyList_ItemClick);
-            // 
-            // BtnCompanyAdd
-            // 
-            this.BtnCompanyAdd.Caption = "Firma Ekle";
-            this.BtnCompanyAdd.Id = 13;
-            this.BtnCompanyAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnCompanyAdd.ImageOptions.Image")));
-            this.BtnCompanyAdd.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnCompanyAdd.ImageOptions.LargeImage")));
-            this.BtnCompanyAdd.Name = "BtnCompanyAdd";
             // 
             // BtnCompanyStatistics
             // 
@@ -360,7 +350,6 @@ namespace Otomasyon_V0
             // 
             this.ribbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup4.ItemLinks.Add(this.BtnCompanyList);
-            this.ribbonPageGroup4.ItemLinks.Add(this.BtnCompanyAdd);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
             // ribbonPageGroup10
@@ -440,7 +429,6 @@ namespace Otomasyon_V0
         private DevExpress.XtraBars.BarButtonItem BtnEmployeeList;
         private DevExpress.XtraBars.BarButtonItem BtnEmployeeStatistics;
         private DevExpress.XtraBars.BarButtonItem BtnCompanyList;
-        private DevExpress.XtraBars.BarButtonItem BtnCompanyAdd;
         private DevExpress.XtraBars.BarButtonItem BtnCompanyStatistics;
         private DevExpress.XtraBars.BarButtonItem BtnTaskList;
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnDepartment;
